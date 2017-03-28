@@ -1,0 +1,2101 @@
+<html><body><pre>
+
+; ==== Section .text - Address 0x00000000 Size 0x000011E0 Flags 0x0006
+
+; ======================================================
+; Subroutine DcManager_9C87A1C7 - Address 0x00000000 - Aliases: DcManager_driver_9C87A1C7
+<a name="DcManager_DcManager_9C87A1C7"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_9C87A1C7"></a>; Exported in DcManager_driver
+<a name="DcManager_9C87A1C7">DcManager_9C87A1C7:</a>
+		; Refs: <a href="#0x00001538">0x00001538</a> <a href="#0x000015E4">0x000015E4</a> 
+<a name="0x00000000"></a>	0x00000000: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x00000004"></a>	0x00000004: 0x03E00008 '....' - jr         $ra
+; Data ref <a href="#0x00001B30">0x00001B30</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000008"></a>	0x00000008: 0x8C421B30 '0.B.' - lw         $v0, 0x1B30($v0)
+
+; ======================================================
+; Subroutine DcManager_F5161120 - Address 0x0000000C - Aliases: DcManager_driver_F5161120
+<a name="DcManager_DcManager_F5161120"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_F5161120"></a>; Exported in DcManager_driver
+<a name="DcManager_F5161120">DcManager_F5161120:</a>
+		; Refs: <a href="#0x0000153C">0x0000153C</a> <a href="#0x000015E8">0x000015E8</a> 
+<a name="0x0000000C"></a>	0x0000000C: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B30">0x00001B30</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000010"></a>	0x00000010: 0xAC441B30 '0.D.' - sw         $a0, 0x1B30($v0)
+<a name="0x00000014"></a>	0x00000014: 0x03E00008 '....' - jr         $ra
+<a name="0x00000018"></a>	0x00000018: 0x00001021 '!...' - move       $v0, $zr
+
+<a name="loc_0000001C">loc_0000001C:</a>
+		; Refs: <a href="#0x00001AD8">0x00001AD8</a> 
+<a name="0x0000001C"></a>	0x0000001C: 0x24020100 '...$' - li         $v0, 0x100
+<a name="0x00000020"></a>	0x00000020: 0x14820006 '....' - bne        $a0, $v0, <a href="#loc_0000003C">loc_0000003C</a>
+<a name="0x00000024"></a>	0x00000024: 0x00001821 '!...' - move       $v1, $zr
+<a name="0x00000028"></a>	0x00000028: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B30">0x00001B30</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000002C"></a>	0x0000002C: 0x8C421B30 '0.B.' - lw         $v0, 0x1B30($v0)
+<a name="0x00000030"></a>	0x00000030: 0x14400002 '..@.' - bnez       $v0, <a href="#loc_0000003C">loc_0000003C</a>
+<a name="0x00000034"></a>	0x00000034: 0x2403FFFF '...$' - li         $v1, 0xFFFF
+<a name="0x00000038"></a>	0x00000038: 0x00001821 '!...' - move       $v1, $zr
+
+<a name="loc_0000003C">loc_0000003C:</a>
+		; Refs: <a href="#0x00000020">0x00000020</a> <a href="#0x00000030">0x00000030</a> 
+<a name="0x0000003C"></a>	0x0000003C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000040"></a>	0x00000040: 0x00601021 '!.`.' - move       $v0, $v1
+
+; ======================================================
+; Subroutine module_start - Address 0x00000044 
+<a name="syslib_module_start"></a>; Exported in syslib
+<a name="module_start">module_start:</a>
+		; Refs: <a href="#0x000014B8">0x000014B8</a> 
+<a name="0x00000044"></a>	0x00000044: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000048"></a>	0x00000048: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x0000004C"></a>	0x0000004C: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000050"></a>	0x00000050: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000054"></a>	0x00000054: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000058"></a>	0x00000058: 0x3C130000 '...&lt;' - lui        $s3, 0x0
+<a name="0x0000005C"></a>	0x0000005C: 0x3C110000 '...&lt;' - lui        $s1, 0x0
+<a name="0x00000060"></a>	0x00000060: 0x24020009 '...$' - li         $v0, 0x9
+<a name="0x00000064"></a>	0x00000064: 0x3C120000 '...&lt;' - lui        $s2, 0x0
+<a name="0x00000068"></a>	0x00000068: 0x3C100000 '...&lt;' - lui        $s0, 0x0
+<a name="0x0000006C"></a>	0x0000006C: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+; Data ref <a href="#0x00001B10">0x00001B10</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000070"></a>	0x00000070: 0xAE601B10 '..`.' - sw         $zr, 0x1B10($s3)
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000074"></a>	0x00000074: 0xAE021B18 '....' - sw         $v0, 0x1B18($s0)
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000078"></a>	0x00000078: 0xAE201B2C ',. .' - sw         $zr, 0x1B2C($s1)
+<a name="0x0000007C"></a>	0x0000007C: 0x0C00047E '~...' - jal        <a href="#sceSysreg_driver_E2A5D1EE">sceSysreg_driver_E2A5D1EE</a>
+; Data ref <a href="#0x00001B40">0x00001B40</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000080"></a>	0x00000080: 0xAE401B40 '@.@.' - sw         $zr, 0x1B40($s2)
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000084"></a>	0x00000084: 0x26241B2C ',.$&' - addiu      $a0, $s1, 0x1B2C
+<a name="0x00000088"></a>	0x00000088: 0x0C000482 '....' - jal        <a href="#sceSyscon_driver_7EC5A957">sceSyscon_driver_7EC5A957</a>
+; Data ref <a href="#0x00001B10">0x00001B10</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000008C"></a>	0x0000008C: 0xAE621B10 '..b.' - sw         $v0, 0x1B10($s3)
+<a name="0x00000090"></a>	0x00000090: 0x04410003 '..A.' - bgez       $v0, <a href="#loc_000000A0">loc_000000A0</a>
+<a name="0x00000094"></a>	0x00000094: 0x3C02DADA '...&lt;' - lui        $v0, 0xDADA
+<a name="0x00000098"></a>	0x00000098: 0x3442DADA '..B4' - ori        $v0, $v0, 0xDADA
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000009C"></a>	0x0000009C: 0xAE221B2C ',.".' - sw         $v0, 0x1B2C($s1)
+
+<a name="loc_000000A0">loc_000000A0:</a>
+		; Refs: <a href="#0x00000090">0x00000090</a> 
+<a name="0x000000A0"></a>	0x000000A0: 0x0C000484 '....' - jal        <a href="#sceSyscon_driver_E7E87741">sceSyscon_driver_E7E87741</a>
+; Data ref <a href="#0x00001B40">0x00001B40</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000000A4"></a>	0x000000A4: 0x26441B40 '@.D&' - addiu      $a0, $s2, 0x1B40
+<a name="0x000000A8"></a>	0x000000A8: 0x04410005 '..A.' - bgez       $v0, <a href="#loc_000000C0">loc_000000C0</a>
+; Data ref <a href="#0x00001B10">0x00001B10</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000000AC"></a>	0x000000AC: 0x8E631B10 '..c.' - lw         $v1, 0x1B10($s3)
+<a name="0x000000B0"></a>	0x000000B0: 0x3C02DADA '...&lt;' - lui        $v0, 0xDADA
+<a name="0x000000B4"></a>	0x000000B4: 0x3442DADA '..B4' - ori        $v0, $v0, 0xDADA
+; Data ref <a href="#0x00001B40">0x00001B40</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000000B8"></a>	0x000000B8: 0xAE421B40 '@.B.' - sw         $v0, 0x1B40($s2)
+; Data ref <a href="#0x00001B10">0x00001B10</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000000BC"></a>	0x000000BC: 0x8E631B10 '..c.' - lw         $v1, 0x1B10($s3)
+
+<a name="loc_000000C0">loc_000000C0:</a>
+		; Refs: <a href="#0x000000A8">0x000000A8</a> 
+<a name="0x000000C0"></a>	0x000000C0: 0x3C020020 ' ..&lt;' - lui        $v0, 0x20
+<a name="0x000000C4"></a>	0x000000C4: 0x10620013 '..b.' - beq        $v1, $v0, <a href="#loc_00000114">loc_00000114</a>
+<a name="0x000000C8"></a>	0x000000C8: 0x0043102B '+.C.' - sltu       $v0, $v0, $v1
+<a name="0x000000CC"></a>	0x000000CC: 0x14400009 '..@.' - bnez       $v0, <a href="#loc_000000F4">loc_000000F4</a>
+<a name="0x000000D0"></a>	0x000000D0: 0x3C020040 '@..&lt;' - lui        $v0, 0x40
+<a name="0x000000D4"></a>	0x000000D4: 0x3C020010 '...&lt;' - lui        $v0, 0x10
+<a name="0x000000D8"></a>	0x000000D8: 0x1062002F '/.b.' - beq        $v1, $v0, <a href="#loc_00000198">loc_00000198</a>
+<a name="0x000000DC"></a>	0x000000DC: 0x2402000A '...$' - li         $v0, 0xA
+<a name="0x000000E0"></a>	0x000000E0: 0x3C020014 '...&lt;' - lui        $v0, 0x14
+<a name="0x000000E4"></a>	0x000000E4: 0x1462002D '-.b.' - bne        $v1, $v0, <a href="#loc_0000019C">loc_0000019C</a>
+<a name="0x000000E8"></a>	0x000000E8: 0x00000000 '....' - nop        
+<a name="0x000000EC"></a>	0x000000EC: 0x08000067 'g...' - j          <a href="#loc_0000019C">loc_0000019C</a>
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000000F0"></a>	0x000000F0: 0xAE001B18 '....' - sw         $zr, 0x1B18($s0)
+
+<a name="loc_000000F4">loc_000000F4:</a>
+		; Refs: <a href="#0x000000CC">0x000000CC</a> 
+<a name="0x000000F4"></a>	0x000000F4: 0x10620012 '..b.' - beq        $v1, $v0, <a href="#loc_00000140">loc_00000140</a>
+<a name="0x000000F8"></a>	0x000000F8: 0x3C020050 'P..&lt;' - lui        $v0, 0x50
+<a name="0x000000FC"></a>	0x000000FC: 0x10620017 '..b.' - beq        $v1, $v0, <a href="#loc_0000015C">loc_0000015C</a>
+<a name="0x00000100"></a>	0x00000100: 0x3C020030 '0..&lt;' - lui        $v0, 0x30
+<a name="0x00000104"></a>	0x00000104: 0x14620025 '%.b.' - bne        $v1, $v0, <a href="#loc_0000019C">loc_0000019C</a>
+<a name="0x00000108"></a>	0x00000108: 0x24020003 '...$' - li         $v0, 0x3
+<a name="0x0000010C"></a>	0x0000010C: 0x08000067 'g...' - j          <a href="#loc_0000019C">loc_0000019C</a>
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000110"></a>	0x00000110: 0xAE021B18 '....' - sw         $v0, 0x1B18($s0)
+
+<a name="loc_00000114">loc_00000114:</a>
+		; Refs: <a href="#0x000000C4">0x000000C4</a> 
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000114"></a>	0x00000114: 0x8E241B2C ',.$.' - lw         $a0, 0x1B2C($s1)
+<a name="0x00000118"></a>	0x00000118: 0x3C020003 '...&lt;' - lui        $v0, 0x3
+<a name="0x0000011C"></a>	0x0000011C: 0x34420600 '..B4' - ori        $v0, $v0, 0x600
+<a name="0x00000120"></a>	0x00000120: 0x1082001D '....' - beq        $a0, $v0, <a href="#loc_00000198">loc_00000198</a>
+<a name="0x00000124"></a>	0x00000124: 0x24020001 '...$' - li         $v0, 0x1
+<a name="0x00000128"></a>	0x00000128: 0x3C020004 '...&lt;' - lui        $v0, 0x4
+<a name="0x0000012C"></a>	0x0000012C: 0x34420600 '..B4' - ori        $v0, $v0, 0x600
+<a name="0x00000130"></a>	0x00000130: 0x1482001A '....' - bne        $a0, $v0, <a href="#loc_0000019C">loc_0000019C</a>
+<a name="0x00000134"></a>	0x00000134: 0x24020002 '...$' - li         $v0, 0x2
+<a name="0x00000138"></a>	0x00000138: 0x08000067 'g...' - j          <a href="#loc_0000019C">loc_0000019C</a>
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000013C"></a>	0x0000013C: 0xAE021B18 '....' - sw         $v0, 0x1B18($s0)
+
+<a name="loc_00000140">loc_00000140:</a>
+		; Refs: <a href="#0x000000F4">0x000000F4</a> 
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000140"></a>	0x00000140: 0x8E231B2C ',.#.' - lw         $v1, 0x1B2C($s1)
+<a name="0x00000144"></a>	0x00000144: 0x3C020012 '...&lt;' - lui        $v0, 0x12
+<a name="0x00000148"></a>	0x00000148: 0x34421000 '..B4' - ori        $v0, $v0, 0x1000
+<a name="0x0000014C"></a>	0x0000014C: 0x54620012 '..bT' - bnel       $v1, $v0, <a href="#loc_00000198">loc_00000198</a>
+<a name="0x00000150"></a>	0x00000150: 0x24020004 '...$' - li         $v0, 0x4
+<a name="0x00000154"></a>	0x00000154: 0x08000066 'f...' - j          <a href="#loc_00000198">loc_00000198</a>
+<a name="0x00000158"></a>	0x00000158: 0x24020007 '...$' - li         $v0, 0x7
+
+<a name="loc_0000015C">loc_0000015C:</a>
+		; Refs: <a href="#0x000000FC">0x000000FC</a> 
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000015C"></a>	0x0000015C: 0x8E241B2C ',.$.' - lw         $a0, 0x1B2C($s1)
+<a name="0x00000160"></a>	0x00000160: 0x3C020023 '#..&lt;' - lui        $v0, 0x23
+<a name="0x00000164"></a>	0x00000164: 0x34424000 '.@B4' - ori        $v0, $v0, 0x4000
+<a name="0x00000168"></a>	0x00000168: 0x1082000B '....' - beq        $a0, $v0, <a href="#loc_00000198">loc_00000198</a>
+<a name="0x0000016C"></a>	0x0000016C: 0x24020006 '...$' - li         $v0, 0x6
+<a name="0x00000170"></a>	0x00000170: 0x3C020024 '$..&lt;' - lui        $v0, 0x24
+<a name="0x00000174"></a>	0x00000174: 0x34423000 '.0B4' - ori        $v0, $v0, 0x3000
+<a name="0x00000178"></a>	0x00000178: 0x10820006 '....' - beq        $a0, $v0, <a href="#loc_00000194">loc_00000194</a>
+<a name="0x0000017C"></a>	0x0000017C: 0x3C020022 '"..&lt;' - lui        $v0, 0x22
+<a name="0x00000180"></a>	0x00000180: 0x3442B200 '..B4' - ori        $v0, $v0, 0xB200
+<a name="0x00000184"></a>	0x00000184: 0x14820005 '....' - bne        $a0, $v0, <a href="#loc_0000019C">loc_0000019C</a>
+<a name="0x00000188"></a>	0x00000188: 0x24020005 '...$' - li         $v0, 0x5
+<a name="0x0000018C"></a>	0x0000018C: 0x08000067 'g...' - j          <a href="#loc_0000019C">loc_0000019C</a>
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000190"></a>	0x00000190: 0xAE021B18 '....' - sw         $v0, 0x1B18($s0)
+
+<a name="loc_00000194">loc_00000194:</a>
+		; Refs: <a href="#0x00000178">0x00000178</a> 
+<a name="0x00000194"></a>	0x00000194: 0x24020008 '...$' - li         $v0, 0x8
+
+<a name="loc_00000198">loc_00000198:</a>
+		; Refs: <a href="#0x000000D8">0x000000D8</a> <a href="#0x00000120">0x00000120</a> <a href="#0x0000014C">0x0000014C</a> <a href="#0x00000154">0x00000154</a> <a href="#0x00000168">0x00000168</a> 
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000198"></a>	0x00000198: 0xAE021B18 '....' - sw         $v0, 0x1B18($s0)
+
+<a name="loc_0000019C">loc_0000019C:</a>
+		; Refs: <a href="#0x000000E4">0x000000E4</a> <a href="#0x000000EC">0x000000EC</a> <a href="#0x00000104">0x00000104</a> <a href="#0x0000010C">0x0000010C</a> <a href="#0x00000130">0x00000130</a> <a href="#0x00000138">0x00000138</a> <a href="#0x00000184">0x00000184</a> <a href="#0x0000018C">0x0000018C</a> 
+<a name="0x0000019C"></a>	0x0000019C: 0x0C00047A 'z...' - jal        <a href="#sceSysreg_driver_4F46EEDE">sceSysreg_driver_4F46EEDE</a>
+<a name="0x000001A0"></a>	0x000001A0: 0x00000000 '....' - nop        
+<a name="0x000001A4"></a>	0x000001A4: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+; Data ref <a href="#0x00001B40">0x00001B4C</a> ... 0x00000000 0x00000000 0x000027DB 0x007B0574 
+<a name="0x000001A8"></a>	0x000001A8: 0xAC831B4C 'L...' - sw         $v1, 0x1B4C($a0)
+<a name="0x000001AC"></a>	0x000001AC: 0x0C00047C '|...' - jal        <a href="#sceSysreg_driver_8F4F4E96">sceSysreg_driver_8F4F4E96</a>
+; Data ref <a href="#0x00001B40">0x00001B48</a> ... 0x00000000 0x00000000 0x00000000 0x000027DB 
+<a name="0x000001B0"></a>	0x000001B0: 0xAC821B48 'H...' - sw         $v0, 0x1B48($a0)
+<a name="0x000001B4"></a>	0x000001B4: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x000001B8"></a>	0x000001B8: 0x0C000492 '....' - jal        <a href="#sceNand_driver_C1376222">sceNand_driver_C1376222</a>
+; Data ref <a href="#0x00001B10">0x00001B14</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000001BC"></a>	0x000001BC: 0xAC621B14 '..b.' - sw         $v0, 0x1B14($v1)
+<a name="0x000001C0"></a>	0x000001C0: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x000001C4"></a>	0x000001C4: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x000001C8"></a>	0x000001C8: 0x0C000490 '....' - jal        <a href="#sceNand_driver_B07C41D4">sceNand_driver_B07C41D4</a>
+; Data ref <a href="#0x00001B20">0x00001B28</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000001CC"></a>	0x000001CC: 0xAC501B28 '(.P.' - sw         $s0, 0x1B28($v0)
+<a name="0x000001D0"></a>	0x000001D0: 0x0C000496 '....' - jal        <a href="#sceNand_driver_CE9843E6">sceNand_driver_CE9843E6</a>
+<a name="0x000001D4"></a>	0x000001D4: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x000001D8"></a>	0x000001D8: 0x02110018 '....' - mult       $s0, $s1
+<a name="0x000001DC"></a>	0x000001DC: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+; Data ref <a href="#0x00001AC0">0x00001ACC</a> ... 0x00000040 0x00001850 0x00FFFF00 0x0000001C 
+<a name="0x000001E0"></a>	0x000001E0: 0x24841ACC '...$' - addiu      $a0, $a0, 0x1ACC
+<a name="0x000001E4"></a>	0x000001E4: 0x00008012 '....' - mflo       $s0
+<a name="0x000001E8"></a>	0x000001E8: 0x02020018 '....' - mult       $s0, $v0
+<a name="0x000001EC"></a>	0x000001EC: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x000001F0"></a>	0x000001F0: 0x00008012 '....' - mflo       $s0
+<a name="0x000001F4"></a>	0x000001F4: 0x0C0004C4 '....' - jal        <a href="#sceSysEventForKernel_CD9E4BB5">sceSysEventForKernel_CD9E4BB5</a>
+; Data ref <a href="#0x00001B40">0x00001B44</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000001F8"></a>	0x000001F8: 0xAC501B44 'D.P.' - sw         $s0, 0x1B44($v0)
+<a name="0x000001FC"></a>	0x000001FC: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+<a name="0x00000200"></a>	0x00000200: 0x0C00049E '....' - jal        <a href="#SystemCtrlForKernel_1C90BECB">SystemCtrlForKernel_1C90BECB</a>
+; Text ref <a href="#sub_00001044">sub_00001044</a> (0x00001044)
+<a name="0x00000204"></a>	0x00000204: 0x24841044 'D..$' - addiu      $a0, $a0, 0x1044
+<a name="0x00000208"></a>	0x00000208: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+; Data ref <a href="#0x00001B30">0x00001B34</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000020C"></a>	0x0000020C: 0xAC621B34 '4.b.' - sw         $v0, 0x1B34($v1)
+<a name="0x00000210"></a>	0x00000210: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x00000214"></a>	0x00000214: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000218"></a>	0x00000218: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x0000021C"></a>	0x0000021C: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000220"></a>	0x00000220: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000224"></a>	0x00000224: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x00000228"></a>	0x00000228: 0x03E00008 '....' - jr         $ra
+<a name="0x0000022C"></a>	0x0000022C: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine sub_00000230 - Address 0x00000230 
+<a name="sub_00000230">sub_00000230:</a>
+		; Refs: <a href="#0x000010F0">0x000010F0</a> 
+<a name="0x00000230"></a>	0x00000230: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000234"></a>	0x00000234: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x00000238"></a>	0x00000238: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x0000023C"></a>	0x0000023C: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B30">0x00001B38</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000240"></a>	0x00000240: 0x8C421B38 '8.B.' - lw         $v0, 0x1B38($v0)
+<a name="0x00000244"></a>	0x00000244: 0x00C08021 '!...' - move       $s0, $a2
+<a name="0x00000248"></a>	0x00000248: 0x0040F809 '..@.' - jalr       $v0
+<a name="0x0000024C"></a>	0x0000024C: 0x26100006 '...&' - addiu      $s0, $s0, 0x6
+<a name="0x00000250"></a>	0x00000250: 0x8A040003 '....' - lwl        $a0, 0x3($s0)
+<a name="0x00000254"></a>	0x00000254: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+; Data ref <a href="#0x00001B20">0x00001B20</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000258"></a>	0x00000258: 0x24651B20 ' .e$' - addiu      $a1, $v1, 0x1B20
+<a name="0x0000025C"></a>	0x0000025C: 0x9A040000 '....' - lwr        $a0, 0x0($s0)
+<a name="0x00000260"></a>	0x00000260: 0xA8A40003 '....' - swl        $a0, 0x3($a1)
+; Data ref <a href="#0x00001B20">0x00001B20</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000264"></a>	0x00000264: 0xB8641B20 ' .d.' - swr        $a0, 0x1B20($v1)
+<a name="0x00000268"></a>	0x00000268: 0x92030004 '....' - lbu        $v1, 0x4($s0)
+<a name="0x0000026C"></a>	0x0000026C: 0x24040001 '...$' - li         $a0, 0x1
+<a name="0x00000270"></a>	0x00000270: 0xA0A30004 '....' - sb         $v1, 0x4($a1)
+<a name="0x00000274"></a>	0x00000274: 0x92060005 '....' - lbu        $a2, 0x5($s0)
+<a name="0x00000278"></a>	0x00000278: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+; Data ref <a href="#0x00001B30">0x00001B3C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000027C"></a>	0x0000027C: 0xAC641B3C '&lt;.d.' - sw         $a0, 0x1B3C($v1)
+<a name="0x00000280"></a>	0x00000280: 0xA0A60005 '....' - sb         $a2, 0x5($a1)
+<a name="0x00000284"></a>	0x00000284: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00000288"></a>	0x00000288: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000028C"></a>	0x0000028C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000290"></a>	0x00000290: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine sub_00000294 - Address 0x00000294 
+<a name="sub_00000294">sub_00000294:</a>
+		; Refs: <a href="#0x00001094">0x00001094</a> 
+<a name="0x00000294"></a>	0x00000294: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000298"></a>	0x00000298: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x0000029C"></a>	0x0000029C: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000002A0"></a>	0x000002A0: 0xAFBF0008 '....' - sw         $ra, 0x8($sp)
+<a name="0x000002A4"></a>	0x000002A4: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B10">0x00001B1C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000002A8"></a>	0x000002A8: 0x8C421B1C '..B.' - lw         $v0, 0x1B1C($v0)
+<a name="0x000002AC"></a>	0x000002AC: 0x00A08021 '!...' - move       $s0, $a1
+<a name="0x000002B0"></a>	0x000002B0: 0x0040F809 '..@.' - jalr       $v0
+<a name="0x000002B4"></a>	0x000002B4: 0x00108400 '....' - sll        $s0, $s0, 16
+<a name="0x000002B8"></a>	0x000002B8: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x000002BC"></a>	0x000002BC: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001980">0x00001980</a> ... 0xFFFFFFFF 0x01F09203 0x0ADC8686 0x0BEE8F36 
+<a name="0x000002C0"></a>	0x000002C0: 0x8C421980 '..B.' - lw         $v0, 0x1980($v0)
+<a name="0x000002C4"></a>	0x000002C4: 0x04400006 '..@.' - bltz       $v0, <a href="#loc_000002E0">loc_000002E0</a>
+<a name="0x000002C8"></a>	0x000002C8: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x000002CC"></a>	0x000002CC: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B20">0x00001B28</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000002D0"></a>	0x000002D0: 0x8C451B28 '(.E.' - lw         $a1, 0x1B28($v0)
+<a name="0x000002D4"></a>	0x000002D4: 0x24A5FFC0 '...$' - addiu      $a1, $a1, 0xFFC0
+<a name="0x000002D8"></a>	0x000002D8: 0x0C0004AA '....' - jal        <a href="#ThreadManForKernel_C11BA8C4">ThreadManForKernel_C11BA8C4</a>
+<a name="0x000002DC"></a>	0x000002DC: 0x02052825 '%(..' - or         $a1, $s0, $a1
+
+<a name="loc_000002E0">loc_000002E0:</a>
+		; Refs: <a href="#0x000002C4">0x000002C4</a> 
+<a name="0x000002E0"></a>	0x000002E0: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x000002E4"></a>	0x000002E4: 0x8FBF0008 '....' - lw         $ra, 0x8($sp)
+<a name="0x000002E8"></a>	0x000002E8: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000002EC"></a>	0x000002EC: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000002F0"></a>	0x000002F0: 0x03E00008 '....' - jr         $ra
+<a name="0x000002F4"></a>	0x000002F4: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine sub_000002F8 - Address 0x000002F8 
+<a name="sub_000002F8">sub_000002F8:</a>
+		; Refs: <a href="#0x00000BF4">0x00000BF4</a> <a href="#0x00000C98">0x00000C98</a> 
+<a name="0x000002F8"></a>	0x000002F8: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x000002FC"></a>	0x000002FC: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000300"></a>	0x00000300: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+<a name="0x00000304"></a>	0x00000304: 0x3C100BEE '...&lt;' - lui        $s0, 0xBEE
+<a name="0x00000308"></a>	0x00000308: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+; Data ref <a href="#0x000017C0">0x000017C4</a> "sceNAND_Updater_Driver"
+<a name="0x0000030C"></a>	0x0000030C: 0x248417C4 '...$' - addiu      $a0, $a0, 0x17C4
+; Data ref <a href="#0x000017D0">0x000017DC</a> "sceNand_updater_driver"
+<a name="0x00000310"></a>	0x00000310: 0x24A517DC '...$' - addiu      $a1, $a1, 0x17DC
+<a name="0x00000314"></a>	0x00000314: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x00000318"></a>	0x00000318: 0x0C00049C '....' - jal        <a href="#SystemCtrlForKernel_159AF5CC">SystemCtrlForKernel_159AF5CC</a>
+<a name="0x0000031C"></a>	0x0000031C: 0x36068F36 '6..6' - ori        $a2, $s0, 0x8F36
+<a name="0x00000320"></a>	0x00000320: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+<a name="0x00000324"></a>	0x00000324: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x00000328"></a>	0x00000328: 0x0040C821 '!.@.' - move       $t9, $v0
+; Data ref <a href="#0x000017F0">0x000017F4</a> "sceLowIO_Driver"
+<a name="0x0000032C"></a>	0x0000032C: 0x248417F4 '...$' - addiu      $a0, $a0, 0x17F4
+; Data ref <a href="#0x00001800">0x00001804</a> "sceNand_driver"
+<a name="0x00000330"></a>	0x00000330: 0x24A51804 '...$' - addiu      $a1, $a1, 0x1804
+<a name="0x00000334"></a>	0x00000334: 0x14400005 '..@.' - bnez       $v0, <a href="#loc_0000034C">loc_0000034C</a>
+<a name="0x00000338"></a>	0x00000338: 0x36068F36 '6..6' - ori        $a2, $s0, 0x8F36
+<a name="0x0000033C"></a>	0x0000033C: 0x0C00049C '....' - jal        <a href="#SystemCtrlForKernel_159AF5CC">SystemCtrlForKernel_159AF5CC</a>
+<a name="0x00000340"></a>	0x00000340: 0x00000000 '....' - nop        
+<a name="0x00000344"></a>	0x00000344: 0x10400006 '..@.' - beqz       $v0, <a href="#loc_00000360">loc_00000360</a>
+<a name="0x00000348"></a>	0x00000348: 0x0040C821 '!.@.' - move       $t9, $v0
+
+<a name="loc_0000034C">loc_0000034C:</a>
+		; Refs: <a href="#0x00000334">0x00000334</a> 
+<a name="0x0000034C"></a>	0x0000034C: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00000350"></a>	0x00000350: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000354"></a>	0x00000354: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000358"></a>	0x00000358: 0x03200008 '.. .' - jr         $t9
+<a name="0x0000035C"></a>	0x0000035C: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+<a name="loc_00000360">loc_00000360:</a>
+		; Refs: <a href="#0x00000344">0x00000344</a> 
+<a name="0x00000360"></a>	0x00000360: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00000364"></a>	0x00000364: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000368"></a>	0x00000368: 0x03E00008 '....' - jr         $ra
+<a name="0x0000036C"></a>	0x0000036C: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine DcManager_4914B8D1 - Address 0x00000370 
+<a name="DcManager_DcManager_4914B8D1"></a>; Exported in DcManager
+<a name="DcManager_4914B8D1">DcManager_4914B8D1:</a>
+		; Refs: <a href="#0x00001594">0x00001594</a> 
+<a name="0x00000370"></a>	0x00000370: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000374"></a>	0x00000374: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000378"></a>	0x00000378: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x0000037C"></a>	0x0000037C: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x00000380"></a>	0x00000380: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000384"></a>	0x00000384: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000388"></a>	0x00000388: 0x8E100000 '....' - lw         $s0, 0x0($s0)
+<a name="0x0000038C"></a>	0x0000038C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000390"></a>	0x00000390: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x00000394"></a>	0x00000394: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x00000398"></a>	0x00000398: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x0000039C"></a>	0x0000039C: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000003A0"></a>	0x000003A0: 0x03E00008 '....' - jr         $ra
+<a name="0x000003A4"></a>	0x000003A4: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine DcManager_109A36FC - Address 0x000003A8 
+<a name="DcManager_DcManager_109A36FC"></a>; Exported in DcManager
+<a name="DcManager_109A36FC">DcManager_109A36FC:</a>
+		; Refs: <a href="#0x00001590">0x00001590</a> 
+<a name="0x000003A8"></a>	0x000003A8: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x000003AC"></a>	0x000003AC: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x000003B0"></a>	0x000003B0: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000003B4"></a>	0x000003B4: 0x00808821 '!...' - move       $s1, $a0
+<a name="0x000003B8"></a>	0x000003B8: 0x00A08021 '!...' - move       $s0, $a1
+<a name="0x000003BC"></a>	0x000003BC: 0xAFBF0008 '....' - sw         $ra, 0x8($sp)
+<a name="0x000003C0"></a>	0x000003C0: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000003C4"></a>	0x000003C4: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x000003C8"></a>	0x000003C8: 0xAE110000 '....' - sw         $s1, 0x0($s0)
+<a name="0x000003CC"></a>	0x000003CC: 0x8FBF0008 '....' - lw         $ra, 0x8($sp)
+<a name="0x000003D0"></a>	0x000003D0: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000003D4"></a>	0x000003D4: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000003D8"></a>	0x000003D8: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x000003DC"></a>	0x000003DC: 0x08000473 's...' - j          <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000003E0"></a>	0x000003E0: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_48DDEA84 - Address 0x000003E4 - Aliases: DcManager_driver_48DDEA84
+<a name="DcManager_DcManager_48DDEA84"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_48DDEA84"></a>; Exported in DcManager_driver
+<a name="DcManager_48DDEA84">DcManager_48DDEA84:</a>
+		; Refs: <a href="#0x00001568">0x00001568</a> <a href="#0x00001614">0x00001614</a> 
+<a name="0x000003E4"></a>	0x000003E4: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x000003E8"></a>	0x000003E8: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000003EC"></a>	0x000003EC: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x000003F0"></a>	0x000003F0: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x000003F4"></a>	0x000003F4: 0xAFBF0008 '....' - sw         $ra, 0x8($sp)
+<a name="0x000003F8"></a>	0x000003F8: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000003FC"></a>	0x000003FC: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000400"></a>	0x00000400: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x00000404"></a>	0x00000404: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B30">0x00001B3C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000408"></a>	0x00000408: 0x8C421B3C '&lt;.B.' - lw         $v0, 0x1B3C($v0)
+<a name="0x0000040C"></a>	0x0000040C: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+; Data ref <a href="#0x00001B20">0x00001B20</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000410"></a>	0x00000410: 0x24651B20 ' .e$' - addiu      $a1, $v1, 0x1B20
+<a name="0x00000414"></a>	0x00000414: 0x1040000A '..@.' - beqz       $v0, <a href="#loc_00000440">loc_00000440</a>
+<a name="0x00000418"></a>	0x00000418: 0x2411FFFF '...$' - li         $s1, 0xFFFF
+<a name="0x0000041C"></a>	0x0000041C: 0x88A20003 '....' - lwl        $v0, 0x3($a1)
+<a name="0x00000420"></a>	0x00000420: 0x00008821 '!...' - move       $s1, $zr
+; Data ref <a href="#0x00001B20">0x00001B20</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00000424"></a>	0x00000424: 0x98621B20 ' .b.' - lwr        $v0, 0x1B20($v1)
+<a name="0x00000428"></a>	0x00000428: 0xAA020003 '....' - swl        $v0, 0x3($s0)
+<a name="0x0000042C"></a>	0x0000042C: 0xBA020000 '....' - swr        $v0, 0x0($s0)
+<a name="0x00000430"></a>	0x00000430: 0x90A20004 '....' - lbu        $v0, 0x4($a1)
+<a name="0x00000434"></a>	0x00000434: 0xA2020004 '....' - sb         $v0, 0x4($s0)
+<a name="0x00000438"></a>	0x00000438: 0x90A20005 '....' - lbu        $v0, 0x5($a1)
+<a name="0x0000043C"></a>	0x0000043C: 0xA2020005 '....' - sb         $v0, 0x5($s0)
+
+<a name="loc_00000440">loc_00000440:</a>
+		; Refs: <a href="#0x00000414">0x00000414</a> 
+<a name="0x00000440"></a>	0x00000440: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000444"></a>	0x00000444: 0x00000000 '....' - nop        
+<a name="0x00000448"></a>	0x00000448: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x0000044C"></a>	0x0000044C: 0x8FBF0008 '....' - lw         $ra, 0x8($sp)
+<a name="0x00000450"></a>	0x00000450: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000454"></a>	0x00000454: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000458"></a>	0x00000458: 0x03E00008 '....' - jr         $ra
+<a name="0x0000045C"></a>	0x0000045C: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_1A718513 - Address 0x00000460 - Aliases: DcManager_driver_1A718513
+<a name="DcManager_DcManager_1A718513"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_1A718513"></a>; Exported in DcManager_driver
+<a name="DcManager_1A718513">DcManager_1A718513:</a>
+		; Refs: <a href="#0x00001564">0x00001564</a> <a href="#0x00001610">0x00001610</a> 
+<a name="0x00000460"></a>	0x00000460: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000464"></a>	0x00000464: 0xAFBF0000 '....' - sw         $ra, 0x0($sp)
+<a name="0x00000468"></a>	0x00000468: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x0000046C"></a>	0x0000046C: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000470"></a>	0x00000470: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x00000474"></a>	0x00000474: 0x2403FFFF '...$' - li         $v1, 0xFFFF
+<a name="0x00000478"></a>	0x00000478: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x0000047C"></a>	0x0000047C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+; Data ref <a href="#0x00001980">0x00001980</a> ... 0xFFFFFFFF 0x01F09203 0x0ADC8686 0x0BEE8F36 
+<a name="0x00000480"></a>	0x00000480: 0xAC431980 '..C.' - sw         $v1, 0x1980($v0)
+<a name="0x00000484"></a>	0x00000484: 0x8FBF0000 '....' - lw         $ra, 0x0($sp)
+<a name="0x00000488"></a>	0x00000488: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x0000048C"></a>	0x0000048C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000490"></a>	0x00000490: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine DcManager_AD3509E5 - Address 0x00000494 - Aliases: DcManager_driver_AD3509E5
+<a name="DcManager_DcManager_AD3509E5"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_AD3509E5"></a>; Exported in DcManager_driver
+<a name="DcManager_AD3509E5">DcManager_AD3509E5:</a>
+		; Refs: <a href="#0x00001560">0x00001560</a> <a href="#0x0000160C">0x0000160C</a> 
+<a name="0x00000494"></a>	0x00000494: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000498"></a>	0x00000498: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x0000049C"></a>	0x0000049C: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x000004A0"></a>	0x000004A0: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x000004A4"></a>	0x000004A4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000004A8"></a>	0x000004A8: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x000004AC"></a>	0x000004AC: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x000004B0"></a>	0x000004B0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x000004B4"></a>	0x000004B4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+; Data ref <a href="#0x00001980">0x00001980</a> ... 0xFFFFFFFF 0x01F09203 0x0ADC8686 0x0BEE8F36 
+<a name="0x000004B8"></a>	0x000004B8: 0xAC501980 '..P.' - sw         $s0, 0x1980($v0)
+<a name="0x000004BC"></a>	0x000004BC: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x000004C0"></a>	0x000004C0: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000004C4"></a>	0x000004C4: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x000004C8"></a>	0x000004C8: 0x03E00008 '....' - jr         $ra
+<a name="0x000004CC"></a>	0x000004CC: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine DcManager_741FFCFD - Address 0x000004D0 - Aliases: DcManager_driver_741FFCFD
+<a name="DcManager_DcManager_741FFCFD"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_741FFCFD"></a>; Exported in DcManager_driver
+<a name="DcManager_741FFCFD">DcManager_741FFCFD:</a>
+		; Refs: <a href="#0x00001548">0x00001548</a> <a href="#0x000015F4">0x000015F4</a> 
+<a name="0x000004D0"></a>	0x000004D0: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x000004D4"></a>	0x000004D4: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000004D8"></a>	0x000004D8: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x000004DC"></a>	0x000004DC: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x000004E0"></a>	0x000004E0: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x000004E4"></a>	0x000004E4: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x000004E8"></a>	0x000004E8: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x000004EC"></a>	0x000004EC: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+<a name="0x000004F0"></a>	0x000004F0: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x000004F4"></a>	0x000004F4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000004F8"></a>	0x000004F8: 0x00C09021 '!...' - move       $s2, $a2
+<a name="0x000004FC"></a>	0x000004FC: 0x12000004 '....' - beqz       $s0, <a href="#loc_00000510">loc_00000510</a>
+<a name="0x00000500"></a>	0x00000500: 0x00409821 '!.@.' - move       $s3, $v0
+<a name="0x00000504"></a>	0x00000504: 0x0C000496 '....' - jal        <a href="#sceNand_driver_CE9843E6">sceNand_driver_CE9843E6</a>
+<a name="0x00000508"></a>	0x00000508: 0x00000000 '....' - nop        
+<a name="0x0000050C"></a>	0x0000050C: 0xAE020000 '....' - sw         $v0, 0x0($s0)
+
+<a name="loc_00000510">loc_00000510:</a>
+		; Refs: <a href="#0x000004FC">0x000004FC</a> 
+<a name="0x00000510"></a>	0x00000510: 0x12200004 '.. .' - beqz       $s1, <a href="#loc_00000524">loc_00000524</a>
+<a name="0x00000514"></a>	0x00000514: 0x00000000 '....' - nop        
+<a name="0x00000518"></a>	0x00000518: 0x0C000490 '....' - jal        <a href="#sceNand_driver_B07C41D4">sceNand_driver_B07C41D4</a>
+<a name="0x0000051C"></a>	0x0000051C: 0x00000000 '....' - nop        
+<a name="0x00000520"></a>	0x00000520: 0xAE220000 '..".' - sw         $v0, 0x0($s1)
+
+<a name="loc_00000524">loc_00000524:</a>
+		; Refs: <a href="#0x00000510">0x00000510</a> 
+<a name="0x00000524"></a>	0x00000524: 0x12400004 '..@.' - beqz       $s2, <a href="#loc_00000538">loc_00000538</a>
+<a name="0x00000528"></a>	0x00000528: 0x00000000 '....' - nop        
+<a name="0x0000052C"></a>	0x0000052C: 0x0C000492 '....' - jal        <a href="#sceNand_driver_C1376222">sceNand_driver_C1376222</a>
+<a name="0x00000530"></a>	0x00000530: 0x00000000 '....' - nop        
+<a name="0x00000534"></a>	0x00000534: 0xAE420000 '..B.' - sw         $v0, 0x0($s2)
+
+<a name="loc_00000538">loc_00000538:</a>
+		; Refs: <a href="#0x00000524">0x00000524</a> 
+<a name="0x00000538"></a>	0x00000538: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x0000053C"></a>	0x0000053C: 0x02602021 '! `.' - move       $a0, $s3
+<a name="0x00000540"></a>	0x00000540: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x00000544"></a>	0x00000544: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000548"></a>	0x00000548: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x0000054C"></a>	0x0000054C: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000550"></a>	0x00000550: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000554"></a>	0x00000554: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x00000558"></a>	0x00000558: 0x03E00008 '....' - jr         $ra
+<a name="0x0000055C"></a>	0x0000055C: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine DcManager_A22190CE - Address 0x00000560 - Aliases: DcManager_driver_A22190CE
+<a name="DcManager_DcManager_A22190CE"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_A22190CE"></a>; Exported in DcManager_driver
+<a name="DcManager_A22190CE">DcManager_A22190CE:</a>
+		; Refs: <a href="#0x0000152C">0x0000152C</a> <a href="#0x000015D8">0x000015D8</a> 
+<a name="0x00000560"></a>	0x00000560: 0x27BDFFE0 '...'' - addiu      $sp, $sp, 0xFFE0
+<a name="0x00000564"></a>	0x00000564: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000568"></a>	0x00000568: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x0000056C"></a>	0x0000056C: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000570"></a>	0x00000570: 0xAFB60018 '....' - sw         $s6, 0x18($sp)
+<a name="0x00000574"></a>	0x00000574: 0xAFB50014 '....' - sw         $s5, 0x14($sp)
+<a name="0x00000578"></a>	0x00000578: 0xAFB40010 '....' - sw         $s4, 0x10($sp)
+<a name="0x0000057C"></a>	0x0000057C: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000580"></a>	0x00000580: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000584"></a>	0x00000584: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000588"></a>	0x00000588: 0xAFBF001C '....' - sw         $ra, 0x1C($sp)
+<a name="0x0000058C"></a>	0x0000058C: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000590"></a>	0x00000590: 0x00C09021 '!...' - move       $s2, $a2
+<a name="0x00000594"></a>	0x00000594: 0x00E09821 '!...' - move       $s3, $a3
+<a name="0x00000598"></a>	0x00000598: 0x0100A021 '!...' - move       $s4, $t0
+<a name="0x0000059C"></a>	0x0000059C: 0x0120A821 '!. .' - move       $s5, $t1
+<a name="0x000005A0"></a>	0x000005A0: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000005A4"></a>	0x000005A4: 0x0140B021 '!.@.' - move       $s6, $t2
+<a name="0x000005A8"></a>	0x000005A8: 0x12000004 '....' - beqz       $s0, <a href="#loc_000005BC">loc_000005BC</a>
+<a name="0x000005AC"></a>	0x000005AC: 0x00402021 '! @.' - move       $a0, $v0
+<a name="0x000005B0"></a>	0x000005B0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B10">0x00001B10</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000005B4"></a>	0x000005B4: 0x8C421B10 '..B.' - lw         $v0, 0x1B10($v0)
+<a name="0x000005B8"></a>	0x000005B8: 0xAE020000 '....' - sw         $v0, 0x0($s0)
+
+<a name="loc_000005BC">loc_000005BC:</a>
+		; Refs: <a href="#0x000005A8">0x000005A8</a> 
+<a name="0x000005BC"></a>	0x000005BC: 0x12200003 '.. .' - beqz       $s1, <a href="#loc_000005CC">loc_000005CC</a>
+<a name="0x000005C0"></a>	0x000005C0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B20">0x00001B2C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000005C4"></a>	0x000005C4: 0x8C421B2C ',.B.' - lw         $v0, 0x1B2C($v0)
+<a name="0x000005C8"></a>	0x000005C8: 0xAE220000 '..".' - sw         $v0, 0x0($s1)
+
+<a name="loc_000005CC">loc_000005CC:</a>
+		; Refs: <a href="#0x000005BC">0x000005BC</a> 
+<a name="0x000005CC"></a>	0x000005CC: 0x12400003 '..@.' - beqz       $s2, <a href="#loc_000005DC">loc_000005DC</a>
+<a name="0x000005D0"></a>	0x000005D0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B40">0x00001B40</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000005D4"></a>	0x000005D4: 0x8C421B40 '@.B.' - lw         $v0, 0x1B40($v0)
+<a name="0x000005D8"></a>	0x000005D8: 0xAE420000 '..B.' - sw         $v0, 0x0($s2)
+
+<a name="loc_000005DC">loc_000005DC:</a>
+		; Refs: <a href="#0x000005CC">0x000005CC</a> 
+<a name="0x000005DC"></a>	0x000005DC: 0x12600003 '..`.' - beqz       $s3, <a href="#loc_000005EC">loc_000005EC</a>
+<a name="0x000005E0"></a>	0x000005E0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B10">0x00001B18</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000005E4"></a>	0x000005E4: 0x8C421B18 '..B.' - lw         $v0, 0x1B18($v0)
+<a name="0x000005E8"></a>	0x000005E8: 0xAE620000 '..b.' - sw         $v0, 0x0($s3)
+
+<a name="loc_000005EC">loc_000005EC:</a>
+		; Refs: <a href="#0x000005DC">0x000005DC</a> 
+<a name="0x000005EC"></a>	0x000005EC: 0x12800005 '....' - beqz       $s4, <a href="#loc_00000604">loc_00000604</a>
+<a name="0x000005F0"></a>	0x000005F0: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B40">0x00001B4C</a> ... 0x00000000 0x00000000 0x000027DB 0x007B0574 
+<a name="0x000005F4"></a>	0x000005F4: 0x8C431B4C 'L.C.' - lw         $v1, 0x1B4C($v0)
+; Data ref <a href="#0x00001B40">0x00001B48</a> ... 0x00000000 0x00000000 0x00000000 0x000027DB 
+<a name="0x000005F8"></a>	0x000005F8: 0x8C421B48 'H.B.' - lw         $v0, 0x1B48($v0)
+<a name="0x000005FC"></a>	0x000005FC: 0xAE830004 '....' - sw         $v1, 0x4($s4)
+<a name="0x00000600"></a>	0x00000600: 0xAE820000 '....' - sw         $v0, 0x0($s4)
+
+<a name="loc_00000604">loc_00000604:</a>
+		; Refs: <a href="#0x000005EC">0x000005EC</a> 
+<a name="0x00000604"></a>	0x00000604: 0x12A00003 '....' - beqz       $s5, <a href="#loc_00000614">loc_00000614</a>
+<a name="0x00000608"></a>	0x00000608: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B10">0x00001B14</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000060C"></a>	0x0000060C: 0x8C421B14 '..B.' - lw         $v0, 0x1B14($v0)
+<a name="0x00000610"></a>	0x00000610: 0xAEA20000 '....' - sw         $v0, 0x0($s5)
+
+<a name="loc_00000614">loc_00000614:</a>
+		; Refs: <a href="#0x00000604">0x00000604</a> 
+<a name="0x00000614"></a>	0x00000614: 0x12C00003 '....' - beqz       $s6, <a href="#loc_00000624">loc_00000624</a>
+<a name="0x00000618"></a>	0x00000618: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001B40">0x00001B44</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000061C"></a>	0x0000061C: 0x8C421B44 'D.B.' - lw         $v0, 0x1B44($v0)
+<a name="0x00000620"></a>	0x00000620: 0xAEC20000 '....' - sw         $v0, 0x0($s6)
+
+<a name="loc_00000624">loc_00000624:</a>
+		; Refs: <a href="#0x00000614">0x00000614</a> 
+<a name="0x00000624"></a>	0x00000624: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000628"></a>	0x00000628: 0x00000000 '....' - nop        
+<a name="0x0000062C"></a>	0x0000062C: 0x8FBF001C '....' - lw         $ra, 0x1C($sp)
+<a name="0x00000630"></a>	0x00000630: 0x8FB60018 '....' - lw         $s6, 0x18($sp)
+<a name="0x00000634"></a>	0x00000634: 0x8FB50014 '....' - lw         $s5, 0x14($sp)
+<a name="0x00000638"></a>	0x00000638: 0x8FB40010 '....' - lw         $s4, 0x10($sp)
+<a name="0x0000063C"></a>	0x0000063C: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000640"></a>	0x00000640: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000644"></a>	0x00000644: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000648"></a>	0x00000648: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000064C"></a>	0x0000064C: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x00000650"></a>	0x00000650: 0x03E00008 '....' - jr         $ra
+<a name="0x00000654"></a>	0x00000654: 0x27BD0020 ' ..'' - addiu      $sp, $sp, 0x20
+
+; ======================================================
+; Subroutine DcManager_A6C4148A - Address 0x00000658 
+<a name="DcManager_DcManager_A6C4148A"></a>; Exported in DcManager
+<a name="DcManager_A6C4148A">DcManager_A6C4148A:</a>
+		; Refs: <a href="#0x00001588">0x00001588</a> 
+<a name="0x00000658"></a>	0x00000658: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x0000065C"></a>	0x0000065C: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000660"></a>	0x00000660: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000664"></a>	0x00000664: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000668"></a>	0x00000668: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x0000066C"></a>	0x0000066C: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000670"></a>	0x00000670: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x00000674"></a>	0x00000674: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000678"></a>	0x00000678: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x0000067C"></a>	0x0000067C: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000680"></a>	0x00000680: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000684"></a>	0x00000684: 0x0C000480 '....' - jal        <a href="#sceSyscon_driver_08234E6D">sceSyscon_driver_08234E6D</a>
+<a name="0x00000688"></a>	0x00000688: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x0000068C"></a>	0x0000068C: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000690"></a>	0x00000690: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000694"></a>	0x00000694: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000698"></a>	0x00000698: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x0000069C"></a>	0x0000069C: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x000006A0"></a>	0x000006A0: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x000006A4"></a>	0x000006A4: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000006A8"></a>	0x000006A8: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000006AC"></a>	0x000006AC: 0x03E00008 '....' - jr         $ra
+<a name="0x000006B0"></a>	0x000006B0: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_34F3F7FC - Address 0x000006B4 
+<a name="DcManager_DcManager_34F3F7FC"></a>; Exported in DcManager
+<a name="DcManager_34F3F7FC">DcManager_34F3F7FC:</a>
+		; Refs: <a href="#0x00001584">0x00001584</a> 
+<a name="0x000006B4"></a>	0x000006B4: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x000006B8"></a>	0x000006B8: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x000006BC"></a>	0x000006BC: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x000006C0"></a>	0x000006C0: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x000006C4"></a>	0x000006C4: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x000006C8"></a>	0x000006C8: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000006CC"></a>	0x000006CC: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000006D0"></a>	0x000006D0: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x000006D4"></a>	0x000006D4: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000006D8"></a>	0x000006D8: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x000006DC"></a>	0x000006DC: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x000006E0"></a>	0x000006E0: 0x00408821 '!.@.' - move       $s1, $v0
+; Text ref <a href="#loc_00000804">loc_00000804</a> (0x00000804)
+<a name="0x000006E4"></a>	0x000006E4: 0x24A50804 '...$' - addiu      $a1, $a1, 0x804
+<a name="0x000006E8"></a>	0x000006E8: 0x00003021 '!0..' - move       $a2, $zr
+<a name="0x000006EC"></a>	0x000006EC: 0x0C0004AC '....' - jal        <a href="#ThreadManForKernel_BC31C1B9">ThreadManForKernel_BC31C1B9</a>
+<a name="0x000006F0"></a>	0x000006F0: 0x24044000 '.@.$' - li         $a0, 0x4000
+<a name="0x000006F4"></a>	0x000006F4: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x000006F8"></a>	0x000006F8: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000006FC"></a>	0x000006FC: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000700"></a>	0x00000700: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000704"></a>	0x00000704: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000708"></a>	0x00000708: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x0000070C"></a>	0x0000070C: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x00000710"></a>	0x00000710: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000714"></a>	0x00000714: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000718"></a>	0x00000718: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000071C"></a>	0x0000071C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000720"></a>	0x00000720: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_FE8EA2A0 - Address 0x00000724 
+<a name="DcManager_DcManager_FE8EA2A0"></a>; Exported in DcManager
+<a name="DcManager_FE8EA2A0">DcManager_FE8EA2A0:</a>
+		; Refs: <a href="#0x00001570">0x00001570</a> 
+<a name="0x00000724"></a>	0x00000724: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000728"></a>	0x00000728: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x0000072C"></a>	0x0000072C: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x00000730"></a>	0x00000730: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000734"></a>	0x00000734: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000738"></a>	0x00000738: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x0000073C"></a>	0x0000073C: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000740"></a>	0x00000740: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x00000744"></a>	0x00000744: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000748"></a>	0x00000748: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x0000074C"></a>	0x0000074C: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x00000750"></a>	0x00000750: 0x00408821 '!.@.' - move       $s1, $v0
+; Text ref <a href="#loc_000009DC">loc_000009DC</a> (0x000009DC)
+<a name="0x00000754"></a>	0x00000754: 0x24A509DC '...$' - addiu      $a1, $a1, 0x9DC
+<a name="0x00000758"></a>	0x00000758: 0x00003021 '!0..' - move       $a2, $zr
+<a name="0x0000075C"></a>	0x0000075C: 0x0C0004AC '....' - jal        <a href="#ThreadManForKernel_BC31C1B9">ThreadManForKernel_BC31C1B9</a>
+<a name="0x00000760"></a>	0x00000760: 0x24044000 '.@.$' - li         $a0, 0x4000
+<a name="0x00000764"></a>	0x00000764: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x00000768"></a>	0x00000768: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x0000076C"></a>	0x0000076C: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000770"></a>	0x00000770: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000774"></a>	0x00000774: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000778"></a>	0x00000778: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x0000077C"></a>	0x0000077C: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x00000780"></a>	0x00000780: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000784"></a>	0x00000784: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000788"></a>	0x00000788: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000078C"></a>	0x0000078C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000790"></a>	0x00000790: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_767A728E - Address 0x00000794 
+<a name="DcManager_DcManager_767A728E"></a>; Exported in DcManager
+<a name="DcManager_767A728E">DcManager_767A728E:</a>
+		; Refs: <a href="#0x0000156C">0x0000156C</a> 
+<a name="0x00000794"></a>	0x00000794: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000798"></a>	0x00000798: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x0000079C"></a>	0x0000079C: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x000007A0"></a>	0x000007A0: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x000007A4"></a>	0x000007A4: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x000007A8"></a>	0x000007A8: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000007AC"></a>	0x000007AC: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000007B0"></a>	0x000007B0: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x000007B4"></a>	0x000007B4: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000007B8"></a>	0x000007B8: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x000007BC"></a>	0x000007BC: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x000007C0"></a>	0x000007C0: 0x00408821 '!.@.' - move       $s1, $v0
+; Text ref <a href="#loc_000009E4">loc_000009E4</a> (0x000009E4)
+<a name="0x000007C4"></a>	0x000007C4: 0x24A509E4 '...$' - addiu      $a1, $a1, 0x9E4
+<a name="0x000007C8"></a>	0x000007C8: 0x00003021 '!0..' - move       $a2, $zr
+<a name="0x000007CC"></a>	0x000007CC: 0x0C0004AC '....' - jal        <a href="#ThreadManForKernel_BC31C1B9">ThreadManForKernel_BC31C1B9</a>
+<a name="0x000007D0"></a>	0x000007D0: 0x24044000 '.@.$' - li         $a0, 0x4000
+<a name="0x000007D4"></a>	0x000007D4: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x000007D8"></a>	0x000007D8: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000007DC"></a>	0x000007DC: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x000007E0"></a>	0x000007E0: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000007E4"></a>	0x000007E4: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x000007E8"></a>	0x000007E8: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x000007EC"></a>	0x000007EC: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x000007F0"></a>	0x000007F0: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x000007F4"></a>	0x000007F4: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000007F8"></a>	0x000007F8: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000007FC"></a>	0x000007FC: 0x03E00008 '....' - jr         $ra
+<a name="0x00000800"></a>	0x00000800: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+<a name="loc_00000804">loc_00000804:</a>
+		; Refs: <a href="#0x000006E4">0x000006E4</a> 
+<a name="0x00000804"></a>	0x00000804: 0x080004C2 '....' - j          <a href="#sceIdStorage_driver_3AD32523">sceIdStorage_driver_3AD32523</a>
+<a name="0x00000808"></a>	0x00000808: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine DcManager_549329DF - Address 0x0000080C 
+<a name="DcManager_DcManager_549329DF"></a>; Exported in DcManager
+<a name="DcManager_549329DF">DcManager_549329DF:</a>
+		; Refs: <a href="#0x00001580">0x00001580</a> 
+<a name="0x0000080C"></a>	0x0000080C: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000810"></a>	0x00000810: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000814"></a>	0x00000814: 0x3092FFFF '...0' - andi       $s2, $a0, 0xFFFF
+<a name="0x00000818"></a>	0x00000818: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x0000081C"></a>	0x0000081C: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+<a name="0x00000820"></a>	0x00000820: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000824"></a>	0x00000824: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000828"></a>	0x00000828: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x0000082C"></a>	0x0000082C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000830"></a>	0x00000830: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000834"></a>	0x00000834: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x00000838"></a>	0x00000838: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x0000083C"></a>	0x0000083C: 0x00409821 '!.@.' - move       $s3, $v0
+<a name="0x00000840"></a>	0x00000840: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000844"></a>	0x00000844: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000848"></a>	0x00000848: 0x0C0004BC '....' - jal        <a href="#sceIdStorage_driver_1FA4D135">sceIdStorage_driver_1FA4D135</a>
+<a name="0x0000084C"></a>	0x0000084C: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000850"></a>	0x00000850: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000854"></a>	0x00000854: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000858"></a>	0x00000858: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x0000085C"></a>	0x0000085C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000860"></a>	0x00000860: 0x02602021 '! `.' - move       $a0, $s3
+<a name="0x00000864"></a>	0x00000864: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x00000868"></a>	0x00000868: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x0000086C"></a>	0x0000086C: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000870"></a>	0x00000870: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000874"></a>	0x00000874: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000878"></a>	0x00000878: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000087C"></a>	0x0000087C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000880"></a>	0x00000880: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine DcManager_127323A6 - Address 0x00000884 
+<a name="DcManager_DcManager_127323A6"></a>; Exported in DcManager
+<a name="DcManager_127323A6">DcManager_127323A6:</a>
+		; Refs: <a href="#0x0000157C">0x0000157C</a> 
+<a name="0x00000884"></a>	0x00000884: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000888"></a>	0x00000888: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x0000088C"></a>	0x0000088C: 0x3092FFFF '...0' - andi       $s2, $a0, 0xFFFF
+<a name="0x00000890"></a>	0x00000890: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000894"></a>	0x00000894: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+<a name="0x00000898"></a>	0x00000898: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x0000089C"></a>	0x0000089C: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x000008A0"></a>	0x000008A0: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x000008A4"></a>	0x000008A4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000008A8"></a>	0x000008A8: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x000008AC"></a>	0x000008AC: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x000008B0"></a>	0x000008B0: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000008B4"></a>	0x000008B4: 0x00409821 '!.@.' - move       $s3, $v0
+<a name="0x000008B8"></a>	0x000008B8: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x000008BC"></a>	0x000008BC: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x000008C0"></a>	0x000008C0: 0x0C0004BA '....' - jal        <a href="#sceIdStorage_driver_EB00C509">sceIdStorage_driver_EB00C509</a>
+<a name="0x000008C4"></a>	0x000008C4: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x000008C8"></a>	0x000008C8: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x000008CC"></a>	0x000008CC: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000008D0"></a>	0x000008D0: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x000008D4"></a>	0x000008D4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000008D8"></a>	0x000008D8: 0x02602021 '! `.' - move       $a0, $s3
+<a name="0x000008DC"></a>	0x000008DC: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x000008E0"></a>	0x000008E0: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x000008E4"></a>	0x000008E4: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x000008E8"></a>	0x000008E8: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x000008EC"></a>	0x000008EC: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000008F0"></a>	0x000008F0: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000008F4"></a>	0x000008F4: 0x03E00008 '....' - jr         $ra
+<a name="0x000008F8"></a>	0x000008F8: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine DcManager_E5F8523D - Address 0x000008FC 
+<a name="DcManager_DcManager_E5F8523D"></a>; Exported in DcManager
+<a name="DcManager_E5F8523D">DcManager_E5F8523D:</a>
+		; Refs: <a href="#0x00001578">0x00001578</a> 
+<a name="0x000008FC"></a>	0x000008FC: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000900"></a>	0x00000900: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000904"></a>	0x00000904: 0x00809021 '!...' - move       $s2, $a0
+<a name="0x00000908"></a>	0x00000908: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x0000090C"></a>	0x0000090C: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+<a name="0x00000910"></a>	0x00000910: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000914"></a>	0x00000914: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000918"></a>	0x00000918: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x0000091C"></a>	0x0000091C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000920"></a>	0x00000920: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000924"></a>	0x00000924: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x00000928"></a>	0x00000928: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x0000092C"></a>	0x0000092C: 0x00409821 '!.@.' - move       $s3, $v0
+<a name="0x00000930"></a>	0x00000930: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000934"></a>	0x00000934: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000938"></a>	0x00000938: 0x0C0004C0 '....' - jal        <a href="#sceIdStorage_driver_99ACCB71">sceIdStorage_driver_99ACCB71</a>
+<a name="0x0000093C"></a>	0x0000093C: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000940"></a>	0x00000940: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000944"></a>	0x00000944: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000948"></a>	0x00000948: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x0000094C"></a>	0x0000094C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000950"></a>	0x00000950: 0x02602021 '! `.' - move       $a0, $s3
+<a name="0x00000954"></a>	0x00000954: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x00000958"></a>	0x00000958: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x0000095C"></a>	0x0000095C: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000960"></a>	0x00000960: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000964"></a>	0x00000964: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000968"></a>	0x00000968: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000096C"></a>	0x0000096C: 0x03E00008 '....' - jr         $ra
+<a name="0x00000970"></a>	0x00000970: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine DcManager_FFAAC913 - Address 0x00000974 
+<a name="DcManager_DcManager_FFAAC913"></a>; Exported in DcManager
+<a name="DcManager_FFAAC913">DcManager_FFAAC913:</a>
+		; Refs: <a href="#0x00001574">0x00001574</a> 
+<a name="0x00000974"></a>	0x00000974: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000978"></a>	0x00000978: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x0000097C"></a>	0x0000097C: 0x3091FFFF '...0' - andi       $s1, $a0, 0xFFFF
+<a name="0x00000980"></a>	0x00000980: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000984"></a>	0x00000984: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x00000988"></a>	0x00000988: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x0000098C"></a>	0x0000098C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000990"></a>	0x00000990: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000994"></a>	0x00000994: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x00000998"></a>	0x00000998: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x0000099C"></a>	0x0000099C: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x000009A0"></a>	0x000009A0: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x000009A4"></a>	0x000009A4: 0x0C0004BE '....' - jal        <a href="#sceIdStorage_driver_08A471A6">sceIdStorage_driver_08A471A6</a>
+<a name="0x000009A8"></a>	0x000009A8: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x000009AC"></a>	0x000009AC: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x000009B0"></a>	0x000009B0: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x000009B4"></a>	0x000009B4: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x000009B8"></a>	0x000009B8: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x000009BC"></a>	0x000009BC: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x000009C0"></a>	0x000009C0: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x000009C4"></a>	0x000009C4: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x000009C8"></a>	0x000009C8: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x000009CC"></a>	0x000009CC: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000009D0"></a>	0x000009D0: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000009D4"></a>	0x000009D4: 0x03E00008 '....' - jr         $ra
+<a name="0x000009D8"></a>	0x000009D8: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+<a name="loc_000009DC">loc_000009DC:</a>
+		; Refs: <a href="#0x00000754">0x00000754</a> 
+<a name="0x000009DC"></a>	0x000009DC: 0x080004B6 '....' - j          <a href="#sceIdStorage_driver_958089DB">sceIdStorage_driver_958089DB</a>
+<a name="0x000009E0"></a>	0x000009E0: 0x00000000 '....' - nop        
+
+<a name="loc_000009E4">loc_000009E4:</a>
+		; Refs: <a href="#0x000007C4">0x000007C4</a> 
+<a name="0x000009E4"></a>	0x000009E4: 0x080004B8 '....' - j          <a href="#sceIdStorage_driver_F4BCB3EE">sceIdStorage_driver_F4BCB3EE</a>
+<a name="0x000009E8"></a>	0x000009E8: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine DcManager_3534B9C1 - Address 0x000009EC 
+<a name="DcManager_DcManager_3534B9C1"></a>; Exported in DcManager
+<a name="DcManager_3534B9C1">DcManager_3534B9C1:</a>
+		; Refs: <a href="#0x0000158C">0x0000158C</a> 
+<a name="0x000009EC"></a>	0x000009EC: 0x27BDFFE0 '...'' - addiu      $sp, $sp, 0xFFE0
+<a name="0x000009F0"></a>	0x000009F0: 0xAFB40010 '....' - sw         $s4, 0x10($sp)
+<a name="0x000009F4"></a>	0x000009F4: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x000009F8"></a>	0x000009F8: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x000009FC"></a>	0x000009FC: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000A00"></a>	0x00000A00: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000A04"></a>	0x00000A04: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000A08"></a>	0x00000A08: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000A0C"></a>	0x00000A0C: 0x00C09021 '!...' - move       $s2, $a2
+<a name="0x00000A10"></a>	0x00000A10: 0x00E09821 '!...' - move       $s3, $a3
+<a name="0x00000A14"></a>	0x00000A14: 0x0100A021 '!...' - move       $s4, $t0
+<a name="0x00000A18"></a>	0x00000A18: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000A1C"></a>	0x00000A1C: 0xAFBF0018 '....' - sw         $ra, 0x18($sp)
+<a name="0x00000A20"></a>	0x00000A20: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000A24"></a>	0x00000A24: 0xAFB50014 '....' - sw         $s5, 0x14($sp)
+<a name="0x00000A28"></a>	0x00000A28: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000A2C"></a>	0x00000A2C: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000A30"></a>	0x00000A30: 0x02403021 '!0@.' - move       $a2, $s2
+<a name="0x00000A34"></a>	0x00000A34: 0x02603821 '!8`.' - move       $a3, $s3
+<a name="0x00000A38"></a>	0x00000A38: 0x02804021 '!@..' - move       $t0, $s4
+<a name="0x00000A3C"></a>	0x00000A3C: 0x0C0004A2 '....' - jal        <a href="#semaphore_4C537C72">semaphore_4C537C72</a>
+<a name="0x00000A40"></a>	0x00000A40: 0x0040A821 '!.@.' - move       $s5, $v0
+<a name="0x00000A44"></a>	0x00000A44: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000A48"></a>	0x00000A48: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000A4C"></a>	0x00000A4C: 0x02A02021 '! ..' - move       $a0, $s5
+<a name="0x00000A50"></a>	0x00000A50: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x00000A54"></a>	0x00000A54: 0x8FBF0018 '....' - lw         $ra, 0x18($sp)
+<a name="0x00000A58"></a>	0x00000A58: 0x8FB50014 '....' - lw         $s5, 0x14($sp)
+<a name="0x00000A5C"></a>	0x00000A5C: 0x8FB40010 '....' - lw         $s4, 0x10($sp)
+<a name="0x00000A60"></a>	0x00000A60: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000A64"></a>	0x00000A64: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000A68"></a>	0x00000A68: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000A6C"></a>	0x00000A6C: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000A70"></a>	0x00000A70: 0x03E00008 '....' - jr         $ra
+<a name="0x00000A74"></a>	0x00000A74: 0x27BD0020 ' ..'' - addiu      $sp, $sp, 0x20
+
+; ======================================================
+; Subroutine DcManager_A899D713 - Address 0x00000A78 - Aliases: DcManager_driver_A899D713
+<a name="DcManager_DcManager_A899D713"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_A899D713"></a>; Exported in DcManager_driver
+<a name="DcManager_A899D713">DcManager_A899D713:</a>
+		; Refs: <a href="#0x00001544">0x00001544</a> <a href="#0x000015F0">0x000015F0</a> 
+<a name="0x00000A78"></a>	0x00000A78: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000A7C"></a>	0x00000A7C: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000A80"></a>	0x00000A80: 0x00809021 '!...' - move       $s2, $a0
+<a name="0x00000A84"></a>	0x00000A84: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000A88"></a>	0x00000A88: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+<a name="0x00000A8C"></a>	0x00000A8C: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000A90"></a>	0x00000A90: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000A94"></a>	0x00000A94: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000A98"></a>	0x00000A98: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000A9C"></a>	0x00000A9C: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000AA0"></a>	0x00000AA0: 0x24040008 '...$' - li         $a0, 0x8
+<a name="0x00000AA4"></a>	0x00000AA4: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000AA8"></a>	0x00000AA8: 0x00409821 '!.@.' - move       $s3, $v0
+<a name="0x00000AAC"></a>	0x00000AAC: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000AB0"></a>	0x00000AB0: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000AB4"></a>	0x00000AB4: 0x0C000478 'x...' - jal        <a href="#LflashFdisk_7A34548C">LflashFdisk_7A34548C</a>
+<a name="0x00000AB8"></a>	0x00000AB8: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000ABC"></a>	0x00000ABC: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000AC0"></a>	0x00000AC0: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000AC4"></a>	0x00000AC4: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x00000AC8"></a>	0x00000AC8: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000ACC"></a>	0x00000ACC: 0x02602021 '! `.' - move       $a0, $s3
+<a name="0x00000AD0"></a>	0x00000AD0: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x00000AD4"></a>	0x00000AD4: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x00000AD8"></a>	0x00000AD8: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000ADC"></a>	0x00000ADC: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000AE0"></a>	0x00000AE0: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000AE4"></a>	0x00000AE4: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000AE8"></a>	0x00000AE8: 0x03E00008 '....' - jr         $ra
+<a name="0x00000AEC"></a>	0x00000AEC: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine DcManager_39D91E83 - Address 0x00000AF0 - Aliases: DcManager_driver_39D91E83
+<a name="DcManager_DcManager_39D91E83"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_39D91E83"></a>; Exported in DcManager_driver
+<a name="DcManager_39D91E83">DcManager_39D91E83:</a>
+		; Refs: <a href="#0x00001540">0x00001540</a> <a href="#0x000015EC">0x000015EC</a> 
+<a name="0x00000AF0"></a>	0x00000AF0: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000AF4"></a>	0x00000AF4: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000AF8"></a>	0x00000AF8: 0x00809021 '!...' - move       $s2, $a0
+<a name="0x00000AFC"></a>	0x00000AFC: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000B00"></a>	0x00000B00: 0xAFBF0010 '....' - sw         $ra, 0x10($sp)
+<a name="0x00000B04"></a>	0x00000B04: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000B08"></a>	0x00000B08: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000B0C"></a>	0x00000B0C: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000B10"></a>	0x00000B10: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000B14"></a>	0x00000B14: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000B18"></a>	0x00000B18: 0x24040004 '...$' - li         $a0, 0x4
+<a name="0x00000B1C"></a>	0x00000B1C: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000B20"></a>	0x00000B20: 0x00409821 '!.@.' - move       $s3, $v0
+<a name="0x00000B24"></a>	0x00000B24: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000B28"></a>	0x00000B28: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000B2C"></a>	0x00000B2C: 0x0C0004A0 '....' - jal        <a href="#LflashFatfmt_B7A424A4">LflashFatfmt_B7A424A4</a>
+<a name="0x00000B30"></a>	0x00000B30: 0x02402021 '! @.' - move       $a0, $s2
+<a name="0x00000B34"></a>	0x00000B34: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000B38"></a>	0x00000B38: 0x0C00049A '....' - jal        <a href="#SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45</a>
+<a name="0x00000B3C"></a>	0x00000B3C: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x00000B40"></a>	0x00000B40: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000B44"></a>	0x00000B44: 0x02602021 '! `.' - move       $a0, $s3
+<a name="0x00000B48"></a>	0x00000B48: 0x02201021 '!. .' - move       $v0, $s1
+<a name="0x00000B4C"></a>	0x00000B4C: 0x8FBF0010 '....' - lw         $ra, 0x10($sp)
+<a name="0x00000B50"></a>	0x00000B50: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000B54"></a>	0x00000B54: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000B58"></a>	0x00000B58: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000B5C"></a>	0x00000B5C: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000B60"></a>	0x00000B60: 0x03E00008 '....' - jr         $ra
+<a name="0x00000B64"></a>	0x00000B64: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine DcManager_7E9128B0 - Address 0x00000B68 - Aliases: DcManager_driver_7E9128B0
+<a name="DcManager_DcManager_7E9128B0"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_7E9128B0"></a>; Exported in DcManager_driver
+<a name="DcManager_7E9128B0">DcManager_7E9128B0:</a>
+		; Refs: <a href="#0x0000155C">0x0000155C</a> <a href="#0x00001608">0x00001608</a> 
+<a name="0x00000B68"></a>	0x00000B68: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000B6C"></a>	0x00000B6C: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000B70"></a>	0x00000B70: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000B74"></a>	0x00000B74: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000B78"></a>	0x00000B78: 0xAFBF0008 '....' - sw         $ra, 0x8($sp)
+<a name="0x00000B7C"></a>	0x00000B7C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000B80"></a>	0x00000B80: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000B84"></a>	0x00000B84: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000B88"></a>	0x00000B88: 0x0C000498 '....' - jal        <a href="#sceNand_driver_EB0A0022">sceNand_driver_EB0A0022</a>
+<a name="0x00000B8C"></a>	0x00000B8C: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x00000B90"></a>	0x00000B90: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000B94"></a>	0x00000B94: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000B98"></a>	0x00000B98: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x00000B9C"></a>	0x00000B9C: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x00000BA0"></a>	0x00000BA0: 0x8FBF0008 '....' - lw         $ra, 0x8($sp)
+<a name="0x00000BA4"></a>	0x00000BA4: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000BA8"></a>	0x00000BA8: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000BAC"></a>	0x00000BAC: 0x03E00008 '....' - jr         $ra
+<a name="0x00000BB0"></a>	0x00000BB0: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_504C82B4 - Address 0x00000BB4 - Aliases: DcManager_driver_504C82B4
+<a name="DcManager_DcManager_504C82B4"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_504C82B4"></a>; Exported in DcManager_driver
+<a name="DcManager_504C82B4">DcManager_504C82B4:</a>
+		; Refs: <a href="#0x00001558">0x00001558</a> <a href="#0x00001604">0x00001604</a> 
+<a name="0x00000BB4"></a>	0x00000BB4: 0x27BDFFE0 '...'' - addiu      $sp, $sp, 0xFFE0
+<a name="0x00000BB8"></a>	0x00000BB8: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000BBC"></a>	0x00000BBC: 0x00809021 '!...' - move       $s2, $a0
+<a name="0x00000BC0"></a>	0x00000BC0: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000BC4"></a>	0x00000BC4: 0xAFBF0018 '....' - sw         $ra, 0x18($sp)
+<a name="0x00000BC8"></a>	0x00000BC8: 0xAFB50014 '....' - sw         $s5, 0x14($sp)
+<a name="0x00000BCC"></a>	0x00000BCC: 0xAFB40010 '....' - sw         $s4, 0x10($sp)
+<a name="0x00000BD0"></a>	0x00000BD0: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000BD4"></a>	0x00000BD4: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000BD8"></a>	0x00000BD8: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000BDC"></a>	0x00000BDC: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000BE0"></a>	0x00000BE0: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000BE4"></a>	0x00000BE4: 0x00C08021 '!...' - move       $s0, $a2
+<a name="0x00000BE8"></a>	0x00000BE8: 0x0C000490 '....' - jal        <a href="#sceNand_driver_B07C41D4">sceNand_driver_B07C41D4</a>
+<a name="0x00000BEC"></a>	0x00000BEC: 0x0040A821 '!.@.' - move       $s5, $v0
+<a name="0x00000BF0"></a>	0x00000BF0: 0x0040A021 '!.@.' - move       $s4, $v0
+<a name="0x00000BF4"></a>	0x00000BF4: 0x0C0000BE '....' - jal        <a href="#sub_000002F8">sub_000002F8</a>
+<a name="0x00000BF8"></a>	0x00000BF8: 0x00009821 '!...' - move       $s3, $zr
+<a name="0x00000BFC"></a>	0x00000BFC: 0x08000304 '....' - j          <a href="#loc_00000C10">loc_00000C10</a>
+<a name="0x00000C00"></a>	0x00000C00: 0x02402021 '! @.' - move       $a0, $s2
+
+<a name="loc_00000C04">loc_00000C04:</a>
+		; Refs: <a href="#0x00000C28">0x00000C28</a> 
+<a name="0x00000C04"></a>	0x00000C04: 0x0C000488 '....' - jal        <a href="#sceNand_driver_0ADC8686">sceNand_driver_0ADC8686</a>
+<a name="0x00000C08"></a>	0x00000C08: 0x26730001 '..s&' - addiu      $s3, $s3, 0x1
+<a name="0x00000C0C"></a>	0x00000C0C: 0x02402021 '! @.' - move       $a0, $s2
+
+<a name="loc_00000C10">loc_00000C10:</a>
+		; Refs: <a href="#0x00000BFC">0x00000BFC</a> 
+<a name="0x00000C10"></a>	0x00000C10: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000C14"></a>	0x00000C14: 0x02003021 '!0..' - move       $a2, $s0
+<a name="0x00000C18"></a>	0x00000C18: 0x24070001 '...$' - li         $a3, 0x1
+<a name="0x00000C1C"></a>	0x00000C1C: 0x24080031 '1..$' - li         $t0, 0x31
+<a name="0x00000C20"></a>	0x00000C20: 0x26520001 '..R&' - addiu      $s2, $s2, 0x1
+<a name="0x00000C24"></a>	0x00000C24: 0x26310200 '..1&' - addiu      $s1, $s1, 0x200
+<a name="0x00000C28"></a>	0x00000C28: 0x1674FFF6 '..t.' - bne        $s3, $s4, <a href="#loc_00000C04">loc_00000C04</a>
+<a name="0x00000C2C"></a>	0x00000C2C: 0x26100010 '...&' - addiu      $s0, $s0, 0x10
+<a name="0x00000C30"></a>	0x00000C30: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000C34"></a>	0x00000C34: 0x02A02021 '! ..' - move       $a0, $s5
+<a name="0x00000C38"></a>	0x00000C38: 0x8FBF0018 '....' - lw         $ra, 0x18($sp)
+<a name="0x00000C3C"></a>	0x00000C3C: 0x8FB50014 '....' - lw         $s5, 0x14($sp)
+<a name="0x00000C40"></a>	0x00000C40: 0x8FB40010 '....' - lw         $s4, 0x10($sp)
+<a name="0x00000C44"></a>	0x00000C44: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000C48"></a>	0x00000C48: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000C4C"></a>	0x00000C4C: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000C50"></a>	0x00000C50: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000C54"></a>	0x00000C54: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x00000C58"></a>	0x00000C58: 0x03E00008 '....' - jr         $ra
+<a name="0x00000C5C"></a>	0x00000C5C: 0x27BD0020 ' ..'' - addiu      $sp, $sp, 0x20
+
+; ======================================================
+; Subroutine DcManager_7EB5614A - Address 0x00000C60 - Aliases: DcManager_driver_7EB5614A
+<a name="DcManager_DcManager_7EB5614A"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_7EB5614A"></a>; Exported in DcManager_driver
+<a name="DcManager_7EB5614A">DcManager_7EB5614A:</a>
+		; Refs: <a href="#0x00001554">0x00001554</a> <a href="#0x00001600">0x00001600</a> 
+<a name="0x00000C60"></a>	0x00000C60: 0x27BDFFE0 '...'' - addiu      $sp, $sp, 0xFFE0
+<a name="0x00000C64"></a>	0x00000C64: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000C68"></a>	0x00000C68: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000C6C"></a>	0x00000C6C: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000C70"></a>	0x00000C70: 0xAFBF0018 '....' - sw         $ra, 0x18($sp)
+<a name="0x00000C74"></a>	0x00000C74: 0xAFB50014 '....' - sw         $s5, 0x14($sp)
+<a name="0x00000C78"></a>	0x00000C78: 0xAFB40010 '....' - sw         $s4, 0x10($sp)
+<a name="0x00000C7C"></a>	0x00000C7C: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000C80"></a>	0x00000C80: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000C84"></a>	0x00000C84: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000C88"></a>	0x00000C88: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000C8C"></a>	0x00000C8C: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000C90"></a>	0x00000C90: 0x0C000490 '....' - jal        <a href="#sceNand_driver_B07C41D4">sceNand_driver_B07C41D4</a>
+<a name="0x00000C94"></a>	0x00000C94: 0x0040A021 '!.@.' - move       $s4, $v0
+<a name="0x00000C98"></a>	0x00000C98: 0x0C0000BE '....' - jal        <a href="#sub_000002F8">sub_000002F8</a>
+<a name="0x00000C9C"></a>	0x00000C9C: 0x0040A821 '!.@.' - move       $s5, $v0
+<a name="0x00000CA0"></a>	0x00000CA0: 0x0C000486 '....' - jal        <a href="#sceNand_driver_01F09203">sceNand_driver_01F09203</a>
+<a name="0x00000CA4"></a>	0x00000CA4: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000CA8"></a>	0x00000CA8: 0x10400015 '..@.' - beqz       $v0, <a href="#loc_00000D00">loc_00000D00</a>
+<a name="0x00000CAC"></a>	0x00000CAC: 0x00009821 '!...' - move       $s3, $zr
+<a name="0x00000CB0"></a>	0x00000CB0: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000CB4"></a>	0x00000CB4: 0x02802021 '! ..' - move       $a0, $s4
+<a name="0x00000CB8"></a>	0x00000CB8: 0x08000345 'E...' - j          <a href="#loc_00000D14">loc_00000D14</a>
+<a name="0x00000CBC"></a>	0x00000CBC: 0x2402FFFF '...$' - li         $v0, 0xFFFF
+
+<a name="loc_00000CC0">loc_00000CC0:</a>
+		; Refs: <a href="#0x00000D00">0x00000D00</a> 
+<a name="0x00000CC0"></a>	0x00000CC0: 0x02202821 '!( .' - move       $a1, $s1
+
+<a name="loc_00000CC4">loc_00000CC4:</a>
+		; Refs: <a href="#0x00000CEC">0x00000CEC</a> 
+<a name="0x00000CC4"></a>	0x00000CC4: 0x00003021 '!0..' - move       $a2, $zr
+<a name="0x00000CC8"></a>	0x00000CC8: 0x24070001 '...$' - li         $a3, 0x1
+<a name="0x00000CCC"></a>	0x00000CCC: 0x0C000494 '....' - jal        <a href="#sceNand_driver_C478C1DE">sceNand_driver_C478C1DE</a>
+<a name="0x00000CD0"></a>	0x00000CD0: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000CD4"></a>	0x00000CD4: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000CD8"></a>	0x00000CD8: 0x26250200 '..%&' - addiu      $a1, $s1, 0x200
+<a name="0x00000CDC"></a>	0x00000CDC: 0x0C00048C '....' - jal        <a href="#sceNand_driver_5182C394">sceNand_driver_5182C394</a>
+<a name="0x00000CE0"></a>	0x00000CE0: 0x24060001 '...$' - li         $a2, 0x1
+<a name="0x00000CE4"></a>	0x00000CE4: 0x26520001 '..R&' - addiu      $s2, $s2, 0x1
+<a name="0x00000CE8"></a>	0x00000CE8: 0x24020004 '...$' - li         $v0, 0x4
+<a name="0x00000CEC"></a>	0x00000CEC: 0x1642FFF5 '..B.' - bne        $s2, $v0, <a href="#loc_00000CC4">loc_00000CC4</a>
+<a name="0x00000CF0"></a>	0x00000CF0: 0x02202821 '!( .' - move       $a1, $s1
+<a name="0x00000CF4"></a>	0x00000CF4: 0x26100001 '...&' - addiu      $s0, $s0, 0x1
+<a name="0x00000CF8"></a>	0x00000CF8: 0x26310210 '..1&' - addiu      $s1, $s1, 0x210
+<a name="0x00000CFC"></a>	0x00000CFC: 0x26730001 '..s&' - addiu      $s3, $s3, 0x1
+
+<a name="loc_00000D00">loc_00000D00:</a>
+		; Refs: <a href="#0x00000CA8">0x00000CA8</a> 
+<a name="0x00000D00"></a>	0x00000D00: 0x1675FFEF '..u.' - bne        $s3, $s5, <a href="#loc_00000CC0">loc_00000CC0</a>
+<a name="0x00000D04"></a>	0x00000D04: 0x00009021 '!...' - move       $s2, $zr
+<a name="0x00000D08"></a>	0x00000D08: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000D0C"></a>	0x00000D0C: 0x02802021 '! ..' - move       $a0, $s4
+<a name="0x00000D10"></a>	0x00000D10: 0x00001021 '!...' - move       $v0, $zr
+
+<a name="loc_00000D14">loc_00000D14:</a>
+		; Refs: <a href="#0x00000CB8">0x00000CB8</a> 
+<a name="0x00000D14"></a>	0x00000D14: 0x8FBF0018 '....' - lw         $ra, 0x18($sp)
+<a name="0x00000D18"></a>	0x00000D18: 0x8FB50014 '....' - lw         $s5, 0x14($sp)
+<a name="0x00000D1C"></a>	0x00000D1C: 0x8FB40010 '....' - lw         $s4, 0x10($sp)
+<a name="0x00000D20"></a>	0x00000D20: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000D24"></a>	0x00000D24: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000D28"></a>	0x00000D28: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000D2C"></a>	0x00000D2C: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000D30"></a>	0x00000D30: 0x03E00008 '....' - jr         $ra
+<a name="0x00000D34"></a>	0x00000D34: 0x27BD0020 ' ..'' - addiu      $sp, $sp, 0x20
+
+; ======================================================
+; Subroutine DcManager_4A5FCC2F - Address 0x00000D38 - Aliases: DcManager_driver_4A5FCC2F
+<a name="DcManager_DcManager_4A5FCC2F"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_4A5FCC2F"></a>; Exported in DcManager_driver
+<a name="DcManager_4A5FCC2F">DcManager_4A5FCC2F:</a>
+		; Refs: <a href="#0x00001550">0x00001550</a> <a href="#0x000015FC">0x000015FC</a> 
+<a name="0x00000D38"></a>	0x00000D38: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000D3C"></a>	0x00000D3C: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000D40"></a>	0x00000D40: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x00000D44"></a>	0x00000D44: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000D48"></a>	0x00000D48: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000D4C"></a>	0x00000D4C: 0x0C00048A '....' - jal        <a href="#sceNand_driver_41FFA822">sceNand_driver_41FFA822</a>
+<a name="0x00000D50"></a>	0x00000D50: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000D54"></a>	0x00000D54: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000D58"></a>	0x00000D58: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000D5C"></a>	0x00000D5C: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00000D60"></a>	0x00000D60: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000D64"></a>	0x00000D64: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x00000D68"></a>	0x00000D68: 0x03E00008 '....' - jr         $ra
+<a name="0x00000D6C"></a>	0x00000D6C: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine DcManager_EA3F4DE5 - Address 0x00000D70 - Aliases: DcManager_driver_EA3F4DE5
+<a name="DcManager_DcManager_EA3F4DE5"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_EA3F4DE5"></a>; Exported in DcManager_driver
+<a name="DcManager_EA3F4DE5">DcManager_EA3F4DE5:</a>
+		; Refs: <a href="#0x0000154C">0x0000154C</a> <a href="#0x000015F8">0x000015F8</a> 
+<a name="0x00000D70"></a>	0x00000D70: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00000D74"></a>	0x00000D74: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000D78"></a>	0x00000D78: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000D7C"></a>	0x00000D7C: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000D80"></a>	0x00000D80: 0xAFBF0008 '....' - sw         $ra, 0x8($sp)
+<a name="0x00000D84"></a>	0x00000D84: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000D88"></a>	0x00000D88: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000D8C"></a>	0x00000D8C: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000D90"></a>	0x00000D90: 0x0C00048E '....' - jal        <a href="#sceNand_driver_AE4438C7">sceNand_driver_AE4438C7</a>
+<a name="0x00000D94"></a>	0x00000D94: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x00000D98"></a>	0x00000D98: 0x00408021 '!.@.' - move       $s0, $v0
+<a name="0x00000D9C"></a>	0x00000D9C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000DA0"></a>	0x00000DA0: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x00000DA4"></a>	0x00000DA4: 0x02001021 '!...' - move       $v0, $s0
+<a name="0x00000DA8"></a>	0x00000DA8: 0x8FBF0008 '....' - lw         $ra, 0x8($sp)
+<a name="0x00000DAC"></a>	0x00000DAC: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000DB0"></a>	0x00000DB0: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000DB4"></a>	0x00000DB4: 0x03E00008 '....' - jr         $ra
+<a name="0x00000DB8"></a>	0x00000DB8: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine DcManager_D298BA53 - Address 0x00000DBC - Aliases: DcManager_driver_D298BA53
+<a name="DcManager_DcManager_D298BA53"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_D298BA53"></a>; Exported in DcManager_driver
+<a name="DcManager_D298BA53">DcManager_D298BA53:</a>
+		; Refs: <a href="#0x00001534">0x00001534</a> <a href="#0x000015E0">0x000015E0</a> 
+<a name="0x00000DBC"></a>	0x00000DBC: 0x27BDFFD8 '...'' - addiu      $sp, $sp, 0xFFD8
+<a name="0x00000DC0"></a>	0x00000DC0: 0xAFB7001C '....' - sw         $s7, 0x1C($sp)
+<a name="0x00000DC4"></a>	0x00000DC4: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000DC8"></a>	0x00000DC8: 0x00A0B821 '!...' - move       $s7, $a1
+<a name="0x00000DCC"></a>	0x00000DCC: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000DD0"></a>	0x00000DD0: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000DD4"></a>	0x00000DD4: 0xAFBF0024 '$...' - sw         $ra, 0x24($sp)
+<a name="0x00000DD8"></a>	0x00000DD8: 0xAFBE0020 ' ...' - sw         $fp, 0x20($sp)
+<a name="0x00000DDC"></a>	0x00000DDC: 0xAFB60018 '....' - sw         $s6, 0x18($sp)
+<a name="0x00000DE0"></a>	0x00000DE0: 0x00C0F021 '!...' - move       $fp, $a2
+<a name="0x00000DE4"></a>	0x00000DE4: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000DE8"></a>	0x00000DE8: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000DEC"></a>	0x00000DEC: 0xAFB50014 '....' - sw         $s5, 0x14($sp)
+<a name="0x00000DF0"></a>	0x00000DF0: 0xAFB40010 '....' - sw         $s4, 0x10($sp)
+<a name="0x00000DF4"></a>	0x00000DF4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000DF8"></a>	0x00000DF8: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000DFC"></a>	0x00000DFC: 0x02E02021 '! ..' - move       $a0, $s7
+<a name="0x00000E00"></a>	0x00000E00: 0x0C0004B0 '....' - jal        <a href="#SysclibForKernel_52DF196C">SysclibForKernel_52DF196C</a>
+<a name="0x00000E04"></a>	0x00000E04: 0x0040B021 '!.@.' - move       $s6, $v0
+<a name="0x00000E08"></a>	0x00000E08: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000E0C"></a>	0x00000E0C: 0x0C0004A6 '....' - jal        <a href="#LoadCoreForKernel_CF8A41B1">LoadCoreForKernel_CF8A41B1</a>
+<a name="0x00000E10"></a>	0x00000E10: 0x00409021 '!.@.' - move       $s2, $v0
+<a name="0x00000E14"></a>	0x00000E14: 0x14400005 '..@.' - bnez       $v0, <a href="#loc_00000E2C">loc_00000E2C</a>
+<a name="0x00000E18"></a>	0x00000E18: 0x00408821 '!.@.' - move       $s1, $v0
+<a name="0x00000E1C"></a>	0x00000E1C: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000E20"></a>	0x00000E20: 0x02C02021 '! ..' - move       $a0, $s6
+<a name="0x00000E24"></a>	0x00000E24: 0x080003AB '....' - j          <a href="#loc_00000EAC">loc_00000EAC</a>
+<a name="0x00000E28"></a>	0x00000E28: 0x2414FFFF '...$' - li         $s4, 0xFFFF
+
+<a name="loc_00000E2C">loc_00000E2C:</a>
+		; Refs: <a href="#0x00000E14">0x00000E14</a> 
+<a name="0x00000E2C"></a>	0x00000E2C: 0x8C420070 'p.B.' - lw         $v0, 0x70($v0)
+<a name="0x00000E30"></a>	0x00000E30: 0x8E230074 't.#.' - lw         $v1, 0x74($s1)
+<a name="0x00000E34"></a>	0x00000E34: 0x8E240078 'x.$.' - lw         $a0, 0x78($s1)
+<a name="0x00000E38"></a>	0x00000E38: 0x00009821 '!...' - move       $s3, $zr
+<a name="0x00000E3C"></a>	0x00000E3C: 0x00431021 '!.C.' - addu       $v0, $v0, $v1
+<a name="0x00000E40"></a>	0x00000E40: 0x0044A821 '!.D.' - addu       $s5, $v0, $a0
+<a name="0x00000E44"></a>	0x00000E44: 0x0800039E '....' - j          <a href="#loc_00000E78">loc_00000E78</a>
+<a name="0x00000E48"></a>	0x00000E48: 0x0000A021 '!...' - move       $s4, $zr
+
+<a name="loc_00000E4C">loc_00000E4C:</a>
+		; Refs: <a href="#0x00000E84">0x00000E84</a> 
+<a name="0x00000E4C"></a>	0x00000E4C: 0x8E30006C 'l.0.' - lw         $s0, 0x6C($s1)
+<a name="0x00000E50"></a>	0x00000E50: 0x02708021 '!.p.' - addu       $s0, $s3, $s0
+<a name="0x00000E54"></a>	0x00000E54: 0x0C0004B4 '....' - jal        <a href="#SysclibForKernel_81D0D1F7">SysclibForKernel_81D0D1F7</a>
+<a name="0x00000E58"></a>	0x00000E58: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000E5C"></a>	0x00000E5C: 0x26730001 '..s&' - addiu      $s3, $s3, 0x1
+<a name="0x00000E60"></a>	0x00000E60: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000E64"></a>	0x00000E64: 0x03C02821 '!(..' - move       $a1, $fp
+<a name="0x00000E68"></a>	0x00000E68: 0x14400003 '..@.' - bnez       $v0, <a href="#loc_00000E78">loc_00000E78</a>
+<a name="0x00000E6C"></a>	0x00000E6C: 0x02403021 '!0@.' - move       $a2, $s2
+<a name="0x00000E70"></a>	0x00000E70: 0x0C0004B2 '....' - jal        <a href="#SysclibForKernel_AB7592FF">SysclibForKernel_AB7592FF</a>
+<a name="0x00000E74"></a>	0x00000E74: 0x26940001 '...&' - addiu      $s4, $s4, 0x1
+
+<a name="loc_00000E78">loc_00000E78:</a>
+		; Refs: <a href="#0x00000E44">0x00000E44</a> <a href="#0x00000E68">0x00000E68</a> 
+<a name="0x00000E78"></a>	0x00000E78: 0x02B21023 '#...' - subu       $v0, $s5, $s2
+<a name="0x00000E7C"></a>	0x00000E7C: 0x0262102A '*.b.' - slt        $v0, $s3, $v0
+<a name="0x00000E80"></a>	0x00000E80: 0x02E02821 '!(..' - move       $a1, $s7
+<a name="0x00000E84"></a>	0x00000E84: 0x1440FFF1 '..@.' - bnez       $v0, <a href="#loc_00000E4C">loc_00000E4C</a>
+<a name="0x00000E88"></a>	0x00000E88: 0x02403021 '!0@.' - move       $a2, $s2
+<a name="0x00000E8C"></a>	0x00000E8C: 0x1A800005 '....' - blez       $s4, <a href="#loc_00000EA4">loc_00000EA4</a>
+<a name="0x00000E90"></a>	0x00000E90: 0x00000000 '....' - nop        
+<a name="0x00000E94"></a>	0x00000E94: 0x0C0004A8 '....' - jal        <a href="#UtilsForKernel_79D1C3FA">UtilsForKernel_79D1C3FA</a>
+<a name="0x00000E98"></a>	0x00000E98: 0x00000000 '....' - nop        
+<a name="0x00000E9C"></a>	0x00000E9C: 0x0C0004A4 '....' - jal        <a href="#LoadCoreForKernel_D8779AC6">LoadCoreForKernel_D8779AC6</a>
+<a name="0x00000EA0"></a>	0x00000EA0: 0x00000000 '....' - nop        
+
+<a name="loc_00000EA4">loc_00000EA4:</a>
+		; Refs: <a href="#0x00000E8C">0x00000E8C</a> 
+<a name="0x00000EA4"></a>	0x00000EA4: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000EA8"></a>	0x00000EA8: 0x02C02021 '! ..' - move       $a0, $s6
+
+<a name="loc_00000EAC">loc_00000EAC:</a>
+		; Refs: <a href="#0x00000E24">0x00000E24</a> 
+<a name="0x00000EAC"></a>	0x00000EAC: 0x02801021 '!...' - move       $v0, $s4
+<a name="0x00000EB0"></a>	0x00000EB0: 0x8FBF0024 '$...' - lw         $ra, 0x24($sp)
+<a name="0x00000EB4"></a>	0x00000EB4: 0x8FBE0020 ' ...' - lw         $fp, 0x20($sp)
+<a name="0x00000EB8"></a>	0x00000EB8: 0x8FB7001C '....' - lw         $s7, 0x1C($sp)
+<a name="0x00000EBC"></a>	0x00000EBC: 0x8FB60018 '....' - lw         $s6, 0x18($sp)
+<a name="0x00000EC0"></a>	0x00000EC0: 0x8FB50014 '....' - lw         $s5, 0x14($sp)
+<a name="0x00000EC4"></a>	0x00000EC4: 0x8FB40010 '....' - lw         $s4, 0x10($sp)
+<a name="0x00000EC8"></a>	0x00000EC8: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000ECC"></a>	0x00000ECC: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000ED0"></a>	0x00000ED0: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000ED4"></a>	0x00000ED4: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000ED8"></a>	0x00000ED8: 0x03E00008 '....' - jr         $ra
+<a name="0x00000EDC"></a>	0x00000EDC: 0x27BD0028 '(..'' - addiu      $sp, $sp, 0x28
+
+; ======================================================
+; Subroutine sub_00000EE0 - Address 0x00000EE0 
+<a name="sub_00000EE0">sub_00000EE0:</a>
+		; Refs: <a href="#0x00001180">0x00001180</a> 
+<a name="0x00000EE0"></a>	0x00000EE0: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000EE4"></a>	0x00000EE4: 0xAFBF0000 '....' - sw         $ra, 0x0($sp)
+<a name="0x00000EE8"></a>	0x00000EE8: 0x0C0004A8 '....' - jal        <a href="#UtilsForKernel_79D1C3FA">UtilsForKernel_79D1C3FA</a>
+<a name="0x00000EEC"></a>	0x00000EEC: 0x00000000 '....' - nop        
+<a name="0x00000EF0"></a>	0x00000EF0: 0x8FBF0000 '....' - lw         $ra, 0x0($sp)
+<a name="0x00000EF4"></a>	0x00000EF4: 0x080004A4 '....' - j          <a href="#LoadCoreForKernel_D8779AC6">LoadCoreForKernel_D8779AC6</a>
+<a name="0x00000EF8"></a>	0x00000EF8: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine DcManager_3A3EA355 - Address 0x00000EFC - Aliases: DcManager_driver_3A3EA355
+<a name="DcManager_DcManager_3A3EA355"></a>; Exported in DcManager
+<a name="DcManager_driver_DcManager_3A3EA355"></a>; Exported in DcManager_driver
+<a name="DcManager_3A3EA355">DcManager_3A3EA355:</a>
+		; Refs: <a href="#0x00001530">0x00001530</a> <a href="#0x000015DC">0x000015DC</a> 
+<a name="0x00000EFC"></a>	0x00000EFC: 0x27BDFFE8 '...'' - addiu      $sp, $sp, 0xFFE8
+<a name="0x00000F00"></a>	0x00000F00: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000F04"></a>	0x00000F04: 0x00808021 '!...' - move       $s0, $a0
+<a name="0x00000F08"></a>	0x00000F08: 0x00002021 '! ..' - move       $a0, $zr
+<a name="0x00000F0C"></a>	0x00000F0C: 0xAFBF0014 '....' - sw         $ra, 0x14($sp)
+<a name="0x00000F10"></a>	0x00000F10: 0xAFB40010 '....' - sw         $s4, 0x10($sp)
+<a name="0x00000F14"></a>	0x00000F14: 0xAFB3000C '....' - sw         $s3, 0xC($sp)
+<a name="0x00000F18"></a>	0x00000F18: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+<a name="0x00000F1C"></a>	0x00000F1C: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00000F20"></a>	0x00000F20: 0x00C09821 '!...' - move       $s3, $a2
+<a name="0x00000F24"></a>	0x00000F24: 0x00A08821 '!...' - move       $s1, $a1
+<a name="0x00000F28"></a>	0x00000F28: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000F2C"></a>	0x00000F2C: 0x00E09021 '!...' - move       $s2, $a3
+<a name="0x00000F30"></a>	0x00000F30: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00000F34"></a>	0x00000F34: 0x0C0004A6 '....' - jal        <a href="#LoadCoreForKernel_CF8A41B1">LoadCoreForKernel_CF8A41B1</a>
+<a name="0x00000F38"></a>	0x00000F38: 0x0040A021 '!.@.' - move       $s4, $v0
+<a name="0x00000F3C"></a>	0x00000F3C: 0x00401821 '!.@.' - move       $v1, $v0
+<a name="0x00000F40"></a>	0x00000F40: 0x14400005 '..@.' - bnez       $v0, <a href="#loc_00000F58">loc_00000F58</a>
+<a name="0x00000F44"></a>	0x00000F44: 0x02802021 '! ..' - move       $a0, $s4
+<a name="0x00000F48"></a>	0x00000F48: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000F4C"></a>	0x00000F4C: 0x00000000 '....' - nop        
+<a name="0x00000F50"></a>	0x00000F50: 0x080003F1 '....' - j          <a href="#loc_00000FC4">loc_00000FC4</a>
+<a name="0x00000F54"></a>	0x00000F54: 0x2402FFFF '...$' - li         $v0, 0xFFFF
+
+<a name="loc_00000F58">loc_00000F58:</a>
+		; Refs: <a href="#0x00000F40">0x00000F40</a> 
+<a name="0x00000F58"></a>	0x00000F58: 0x56200006 '.. V' - bnezl      $s1, <a href="#loc_00000F74">loc_00000F74</a>
+<a name="0x00000F5C"></a>	0x00000F5C: 0x24020001 '...$' - li         $v0, 0x1
+<a name="0x00000F60"></a>	0x00000F60: 0x8C42006C 'l.B.' - lw         $v0, 0x6C($v0)
+<a name="0x00000F64"></a>	0x00000F64: 0x02621021 '!.b.' - addu       $v0, $s3, $v0
+<a name="0x00000F68"></a>	0x00000F68: 0xAC520000 '..R.' - sw         $s2, 0x0($v0)
+<a name="0x00000F6C"></a>	0x00000F6C: 0x080003EA '....' - j          <a href="#loc_00000FA8">loc_00000FA8</a>
+<a name="0x00000F70"></a>	0x00000F70: 0x00000000 '....' - nop        
+
+<a name="loc_00000F74">loc_00000F74:</a>
+		; Refs: <a href="#0x00000F58">0x00000F58</a> 
+<a name="0x00000F74"></a>	0x00000F74: 0x16220006 '..".' - bne        $s1, $v0, <a href="#loc_00000F90">loc_00000F90</a>
+<a name="0x00000F78"></a>	0x00000F78: 0x3244FFFF '..D2' - andi       $a0, $s2, 0xFFFF
+<a name="0x00000F7C"></a>	0x00000F7C: 0x8C62006C 'l.b.' - lw         $v0, 0x6C($v1)
+<a name="0x00000F80"></a>	0x00000F80: 0x02621021 '!.b.' - addu       $v0, $s3, $v0
+<a name="0x00000F84"></a>	0x00000F84: 0xA4440000 '..D.' - sh         $a0, 0x0($v0)
+<a name="0x00000F88"></a>	0x00000F88: 0x080003EA '....' - j          <a href="#loc_00000FA8">loc_00000FA8</a>
+<a name="0x00000F8C"></a>	0x00000F8C: 0x00000000 '....' - nop        
+
+<a name="loc_00000F90">loc_00000F90:</a>
+		; Refs: <a href="#0x00000F74">0x00000F74</a> 
+<a name="0x00000F90"></a>	0x00000F90: 0x24020002 '...$' - li         $v0, 0x2
+<a name="0x00000F94"></a>	0x00000F94: 0x16220004 '..".' - bne        $s1, $v0, <a href="#loc_00000FA8">loc_00000FA8</a>
+<a name="0x00000F98"></a>	0x00000F98: 0x324700FF '..G2' - andi       $a3, $s2, 0xFF
+<a name="0x00000F9C"></a>	0x00000F9C: 0x8C62006C 'l.b.' - lw         $v0, 0x6C($v1)
+<a name="0x00000FA0"></a>	0x00000FA0: 0x02621021 '!.b.' - addu       $v0, $s3, $v0
+<a name="0x00000FA4"></a>	0x00000FA4: 0xA0470000 '..G.' - sb         $a3, 0x0($v0)
+
+<a name="loc_00000FA8">loc_00000FA8:</a>
+		; Refs: <a href="#0x00000F6C">0x00000F6C</a> <a href="#0x00000F88">0x00000F88</a> <a href="#0x00000F94">0x00000F94</a> 
+<a name="0x00000FA8"></a>	0x00000FA8: 0x0C0004A8 '....' - jal        <a href="#UtilsForKernel_79D1C3FA">UtilsForKernel_79D1C3FA</a>
+<a name="0x00000FAC"></a>	0x00000FAC: 0x00000000 '....' - nop        
+<a name="0x00000FB0"></a>	0x00000FB0: 0x0C0004A4 '....' - jal        <a href="#LoadCoreForKernel_D8779AC6">LoadCoreForKernel_D8779AC6</a>
+<a name="0x00000FB4"></a>	0x00000FB4: 0x00000000 '....' - nop        
+<a name="0x00000FB8"></a>	0x00000FB8: 0x0C000473 's...' - jal        <a href="#sub_000011CC">sub_000011CC</a>
+<a name="0x00000FBC"></a>	0x00000FBC: 0x02802021 '! ..' - move       $a0, $s4
+<a name="0x00000FC0"></a>	0x00000FC0: 0x00001021 '!...' - move       $v0, $zr
+
+<a name="loc_00000FC4">loc_00000FC4:</a>
+		; Refs: <a href="#0x00000F50">0x00000F50</a> 
+<a name="0x00000FC4"></a>	0x00000FC4: 0x8FBF0014 '....' - lw         $ra, 0x14($sp)
+<a name="0x00000FC8"></a>	0x00000FC8: 0x8FB40010 '....' - lw         $s4, 0x10($sp)
+<a name="0x00000FCC"></a>	0x00000FCC: 0x8FB3000C '....' - lw         $s3, 0xC($sp)
+<a name="0x00000FD0"></a>	0x00000FD0: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x00000FD4"></a>	0x00000FD4: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x00000FD8"></a>	0x00000FD8: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x00000FDC"></a>	0x00000FDC: 0x03E00008 '....' - jr         $ra
+<a name="0x00000FE0"></a>	0x00000FE0: 0x27BD0018 '...'' - addiu      $sp, $sp, 0x18
+
+; ======================================================
+; Subroutine sub_00000FE4 - Address 0x00000FE4 
+<a name="sub_00000FE4">sub_00000FE4:</a>
+		; Refs: <a href="#0x00001168">0x00001168</a> 
+<a name="0x00000FE4"></a>	0x00000FE4: 0x27BDFFF8 '...'' - addiu      $sp, $sp, 0xFFF8
+<a name="0x00000FE8"></a>	0x00000FE8: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x00000FEC"></a>	0x00000FEC: 0x00803021 '!0..' - move       $a2, $a0
+<a name="0x00000FF0"></a>	0x00000FF0: 0x00A08021 '!...' - move       $s0, $a1
+<a name="0x00000FF4"></a>	0x00000FF4: 0x3C040000 '...&lt;' - lui        $a0, 0x0
+<a name="0x00000FF8"></a>	0x00000FF8: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+; Data ref <a href="#0x000017F0">0x000017F4</a> "sceLowIO_Driver"
+<a name="0x00000FFC"></a>	0x00000FFC: 0x248417F4 '...$' - addiu      $a0, $a0, 0x17F4
+<a name="0x00001000"></a>	0x00001000: 0xAFBF0004 '....' - sw         $ra, 0x4($sp)
+<a name="0x00001004"></a>	0x00001004: 0x0C00049C '....' - jal        <a href="#SystemCtrlForKernel_159AF5CC">SystemCtrlForKernel_159AF5CC</a>
+; Data ref <a href="#0x00001800">0x00001804</a> "sceNand_driver"
+<a name="0x00001008"></a>	0x00001008: 0x24A51804 '...$' - addiu      $a1, $a1, 0x1804
+<a name="0x0000100C"></a>	0x0000100C: 0x00401821 '!.@.' - move       $v1, $v0
+<a name="0x00001010"></a>	0x00001010: 0x3C0203FF '...&lt;' - lui        $v0, 0x3FF
+<a name="0x00001014"></a>	0x00001014: 0x3442FFFF '..B4' - ori        $v0, $v0, 0xFFFF
+<a name="0x00001018"></a>	0x00001018: 0x00108082 '....' - srl        $s0, $s0, 2
+<a name="0x0000101C"></a>	0x0000101C: 0x02028024 '$...' - and        $s0, $s0, $v0
+<a name="0x00001020"></a>	0x00001020: 0x3C020800 '...&lt;' - lui        $v0, 0x800
+<a name="0x00001024"></a>	0x00001024: 0x10600003 '..`.' - beqz       $v1, <a href="#loc_00001034">loc_00001034</a>
+<a name="0x00001028"></a>	0x00001028: 0x02028025 '%...' - or         $s0, $s0, $v0
+<a name="0x0000102C"></a>	0x0000102C: 0xAC700000 '..p.' - sw         $s0, 0x0($v1)
+<a name="0x00001030"></a>	0x00001030: 0xAC600004 '..`.' - sw         $zr, 0x4($v1)
+
+<a name="loc_00001034">loc_00001034:</a>
+		; Refs: <a href="#0x00001024">0x00001024</a> 
+<a name="0x00001034"></a>	0x00001034: 0x8FBF0004 '....' - lw         $ra, 0x4($sp)
+<a name="0x00001038"></a>	0x00001038: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x0000103C"></a>	0x0000103C: 0x03E00008 '....' - jr         $ra
+<a name="0x00001040"></a>	0x00001040: 0x27BD0008 '...'' - addiu      $sp, $sp, 0x8
+
+; ======================================================
+; Subroutine sub_00001044 - Address 0x00001044 
+<a name="sub_00001044">sub_00001044:</a>
+		; Refs: <a href="#0x00000204">0x00000204</a> 
+<a name="0x00001044"></a>	0x00001044: 0x27BDFFF0 '...'' - addiu      $sp, $sp, 0xFFF0
+<a name="0x00001048"></a>	0x00001048: 0xAFB00000 '....' - sw         $s0, 0x0($sp)
+<a name="0x0000104C"></a>	0x0000104C: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x00001050"></a>	0x00001050: 0x24900008 '...$' - addiu      $s0, $a0, 0x8
+<a name="0x00001054"></a>	0x00001054: 0xAFB10004 '....' - sw         $s1, 0x4($sp)
+<a name="0x00001058"></a>	0x00001058: 0xAFBF000C '....' - sw         $ra, 0xC($sp)
+<a name="0x0000105C"></a>	0x0000105C: 0x00808821 '!...' - move       $s1, $a0
+<a name="0x00001060"></a>	0x00001060: 0xAFB20008 '....' - sw         $s2, 0x8($sp)
+; Data ref <a href="#0x00001810">0x00001814</a> "sceLflashFatfmt"
+<a name="0x00001064"></a>	0x00001064: 0x24A51814 '...$' - addiu      $a1, $a1, 0x1814
+<a name="0x00001068"></a>	0x00001068: 0x0C0004AE '....' - jal        <a href="#SysclibForKernel_C0AB8932">SysclibForKernel_C0AB8932</a>
+<a name="0x0000106C"></a>	0x0000106C: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00001070"></a>	0x00001070: 0x10400050 'P.@.' - beqz       $v0, <a href="#loc_000011B4">loc_000011B4</a>
+<a name="0x00001074"></a>	0x00001074: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x00001078"></a>	0x00001078: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+; Data ref <a href="#0x00001820">0x00001824</a> "sceLFatFs_Updater_Driver"
+<a name="0x0000107C"></a>	0x0000107C: 0x24A51824 '$..$' - addiu      $a1, $a1, 0x1824
+<a name="0x00001080"></a>	0x00001080: 0x0C0004AE '....' - jal        <a href="#SysclibForKernel_C0AB8932">SysclibForKernel_C0AB8932</a>
+<a name="0x00001084"></a>	0x00001084: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00001088"></a>	0x00001088: 0x14400013 '..@.' - bnez       $v0, <a href="#loc_000010D8">loc_000010D8</a>
+<a name="0x0000108C"></a>	0x0000108C: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x00001090"></a>	0x00001090: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+; Text ref <a href="#sub_00000294">sub_00000294</a> (0x00000294)
+<a name="0x00001094"></a>	0x00001094: 0x24630294 '..c$' - addiu      $v1, $v1, 0x294
+<a name="0x00001098"></a>	0x00001098: 0x3C0203FF '...&lt;' - lui        $v0, 0x3FF
+<a name="0x0000109C"></a>	0x0000109C: 0x8E24006C 'l.$.' - lw         $a0, 0x6C($s1)
+<a name="0x000010A0"></a>	0x000010A0: 0x3442FFFF '..B4' - ori        $v0, $v0, 0xFFFF
+<a name="0x000010A4"></a>	0x000010A4: 0x00031882 '....' - srl        $v1, $v1, 2
+<a name="0x000010A8"></a>	0x000010A8: 0x00621824 '$.b.' - and        $v1, $v1, $v0
+<a name="0x000010AC"></a>	0x000010AC: 0x3C020C00 '...&lt;' - lui        $v0, 0xC00
+<a name="0x000010B0"></a>	0x000010B0: 0x00621825 '%.b.' - or         $v1, $v1, $v0
+<a name="0x000010B4"></a>	0x000010B4: 0x34028914 '...4' - li         $v0, 0x8914
+<a name="0x000010B8"></a>	0x000010B8: 0x00822021 '! ..' - addu       $a0, $a0, $v0
+<a name="0x000010BC"></a>	0x000010BC: 0xAC830000 '....' - sw         $v1, 0x0($a0)
+<a name="0x000010C0"></a>	0x000010C0: 0x8E22006C 'l.".' - lw         $v0, 0x6C($s1)
+<a name="0x000010C4"></a>	0x000010C4: 0x34038E5C '\..4' - li         $v1, 0x8E5C
+<a name="0x000010C8"></a>	0x000010C8: 0x00431021 '!.C.' - addu       $v0, $v0, $v1
+<a name="0x000010CC"></a>	0x000010CC: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x000010D0"></a>	0x000010D0: 0x08000460 '`...' - j          <a href="#loc_00001180">loc_00001180</a>
+; Data ref <a href="#0x00001B10">0x00001B1C</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x000010D4"></a>	0x000010D4: 0xAC621B1C '..b.' - sw         $v0, 0x1B1C($v1)
+
+<a name="loc_000010D8">loc_000010D8:</a>
+		; Refs: <a href="#0x00001088">0x00001088</a> 
+; Data ref <a href="#0x00001840">0x00001840</a> "sceWlan_Driver"
+<a name="0x000010D8"></a>	0x000010D8: 0x24A51840 '@..$' - addiu      $a1, $a1, 0x1840
+<a name="0x000010DC"></a>	0x000010DC: 0x0C0004AE '....' - jal        <a href="#SysclibForKernel_C0AB8932">SysclibForKernel_C0AB8932</a>
+<a name="0x000010E0"></a>	0x000010E0: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x000010E4"></a>	0x000010E4: 0x14400011 '..@.' - bnez       $v0, <a href="#loc_0000112C">loc_0000112C</a>
+<a name="0x000010E8"></a>	0x000010E8: 0x3C050000 '...&lt;' - lui        $a1, 0x0
+<a name="0x000010EC"></a>	0x000010EC: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+; Text ref <a href="#sub_00000230">sub_00000230</a> (0x00000230)
+<a name="0x000010F0"></a>	0x000010F0: 0x24630230 '0.c$' - addiu      $v1, $v1, 0x230
+<a name="0x000010F4"></a>	0x000010F4: 0x3C0203FF '...&lt;' - lui        $v0, 0x3FF
+<a name="0x000010F8"></a>	0x000010F8: 0x3442FFFF '..B4' - ori        $v0, $v0, 0xFFFF
+<a name="0x000010FC"></a>	0x000010FC: 0x00031882 '....' - srl        $v1, $v1, 2
+<a name="0x00001100"></a>	0x00001100: 0x8E24006C 'l.$.' - lw         $a0, 0x6C($s1)
+<a name="0x00001104"></a>	0x00001104: 0x00621824 '$.b.' - and        $v1, $v1, $v0
+<a name="0x00001108"></a>	0x00001108: 0x3C020C00 '...&lt;' - lui        $v0, 0xC00
+<a name="0x0000110C"></a>	0x0000110C: 0x00621825 '%.b.' - or         $v1, $v1, $v0
+<a name="0x00001110"></a>	0x00001110: 0xAC834DAC '.M..' - sw         $v1, 0x4DAC($a0)
+<a name="0x00001114"></a>	0x00001114: 0x8E22006C 'l.".' - lw         $v0, 0x6C($s1)
+<a name="0x00001118"></a>	0x00001118: 0x3403D42C ',..4' - li         $v1, 0xD42C
+<a name="0x0000111C"></a>	0x0000111C: 0x00431021 '!.C.' - addu       $v0, $v0, $v1
+<a name="0x00001120"></a>	0x00001120: 0x3C030000 '...&lt;' - lui        $v1, 0x0
+<a name="0x00001124"></a>	0x00001124: 0x08000460 '`...' - j          <a href="#loc_00001180">loc_00001180</a>
+; Data ref <a href="#0x00001B30">0x00001B38</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x00001128"></a>	0x00001128: 0xAC621B38 '8.b.' - sw         $v0, 0x1B38($v1)
+
+<a name="loc_0000112C">loc_0000112C:</a>
+		; Refs: <a href="#0x000010E4">0x000010E4</a> 
+<a name="0x0000112C"></a>	0x0000112C: 0x02002021 '! ..' - move       $a0, $s0
+<a name="0x00001130"></a>	0x00001130: 0x0C0004AE '....' - jal        <a href="#SysclibForKernel_C0AB8932">SysclibForKernel_C0AB8932</a>
+; Data ref <a href="#0x000017C0">0x000017C4</a> "sceNAND_Updater_Driver"
+<a name="0x00001134"></a>	0x00001134: 0x24A517C4 '...$' - addiu      $a1, $a1, 0x17C4
+<a name="0x00001138"></a>	0x00001138: 0x14400014 '..@.' - bnez       $v0, <a href="#loc_0000118C">loc_0000118C</a>
+<a name="0x0000113C"></a>	0x0000113C: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+<a name="0x00001140"></a>	0x00001140: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001A20">0x00001A28</a> ... 0x000018C0 0x00000918 0x00000D70 0xFFFFFFFF 
+<a name="0x00001144"></a>	0x00001144: 0x24501A28 '(.P$' - addiu      $s0, $v0, 0x1A28
+<a name="0x00001148"></a>	0x00001148: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001980">0x00001984</a> ... 0x01F09203 0x0ADC8686 0x0BEE8F36 0x0F9BBBBD 
+<a name="0x0000114C"></a>	0x0000114C: 0x24521984 '..R$' - addiu      $s2, $v0, 0x1984
+
+<a name="loc_00001150">loc_00001150:</a>
+		; Refs: <a href="#0x00001178">0x00001178</a> 
+<a name="0x00001150"></a>	0x00001150: 0x8E030000 '....' - lw         $v1, 0x0($s0)
+<a name="0x00001154"></a>	0x00001154: 0x2402FFFF '...$' - li         $v0, 0xFFFF
+<a name="0x00001158"></a>	0x00001158: 0x10620005 '..b.' - beq        $v1, $v0, <a href="#loc_00001170">loc_00001170</a>
+<a name="0x0000115C"></a>	0x0000115C: 0x26100004 '...&' - addiu      $s0, $s0, 0x4
+<a name="0x00001160"></a>	0x00001160: 0x8E25006C 'l.%.' - lw         $a1, 0x6C($s1)
+<a name="0x00001164"></a>	0x00001164: 0x8E440000 '..D.' - lw         $a0, 0x0($s2)
+<a name="0x00001168"></a>	0x00001168: 0x0C0003F9 '....' - jal        <a href="#sub_00000FE4">sub_00000FE4</a>
+<a name="0x0000116C"></a>	0x0000116C: 0x00652821 '!(e.' - addu       $a1, $v1, $a1
+
+<a name="loc_00001170">loc_00001170:</a>
+		; Refs: <a href="#0x00001158">0x00001158</a> 
+<a name="0x00001170"></a>	0x00001170: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+; Data ref <a href="#0x00001AC0">0x00001ACC</a> ... 0x00000040 0x00001850 0x00FFFF00 0x0000001C 
+<a name="0x00001174"></a>	0x00001174: 0x24421ACC '..B$' - addiu      $v0, $v0, 0x1ACC
+<a name="0x00001178"></a>	0x00001178: 0x1602FFF5 '....' - bne        $s0, $v0, <a href="#loc_00001150">loc_00001150</a>
+<a name="0x0000117C"></a>	0x0000117C: 0x26520004 '..R&' - addiu      $s2, $s2, 0x4
+
+<a name="loc_00001180">loc_00001180:</a>
+		; Refs: <a href="#0x000010D0">0x000010D0</a> <a href="#0x00001124">0x00001124</a> 
+<a name="0x00001180"></a>	0x00001180: 0x0C0003B8 '....' - jal        <a href="#sub_00000EE0">sub_00000EE0</a>
+<a name="0x00001184"></a>	0x00001184: 0x00000000 '....' - nop        
+<a name="0x00001188"></a>	0x00001188: 0x3C020000 '...&lt;' - lui        $v0, 0x0
+
+<a name="loc_0000118C">loc_0000118C:</a>
+		; Refs: <a href="#0x00001138">0x00001138</a> 
+; Data ref <a href="#0x00001B30">0x00001B34</a> ... 0x00000000 0x00000000 0x00000000 0x00000000 
+<a name="0x0000118C"></a>	0x0000118C: 0x8C591B34 '4.Y.' - lw         $t9, 0x1B34($v0)
+<a name="0x00001190"></a>	0x00001190: 0x13200007 '.. .' - beqz       $t9, <a href="#loc_000011B0">loc_000011B0</a>
+<a name="0x00001194"></a>	0x00001194: 0x02202021 '!  .' - move       $a0, $s1
+<a name="0x00001198"></a>	0x00001198: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+<a name="0x0000119C"></a>	0x0000119C: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x000011A0"></a>	0x000011A0: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000011A4"></a>	0x000011A4: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000011A8"></a>	0x000011A8: 0x03200008 '.. .' - jr         $t9
+<a name="0x000011AC"></a>	0x000011AC: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+<a name="loc_000011B0">loc_000011B0:</a>
+		; Refs: <a href="#0x00001190">0x00001190</a> 
+<a name="0x000011B0"></a>	0x000011B0: 0x8FBF000C '....' - lw         $ra, 0xC($sp)
+
+<a name="loc_000011B4">loc_000011B4:</a>
+		; Refs: <a href="#0x00001070">0x00001070</a> 
+<a name="0x000011B4"></a>	0x000011B4: 0x8FB20008 '....' - lw         $s2, 0x8($sp)
+<a name="0x000011B8"></a>	0x000011B8: 0x8FB10004 '....' - lw         $s1, 0x4($sp)
+<a name="0x000011BC"></a>	0x000011BC: 0x8FB00000 '....' - lw         $s0, 0x0($sp)
+<a name="0x000011C0"></a>	0x000011C0: 0x00001021 '!...' - move       $v0, $zr
+<a name="0x000011C4"></a>	0x000011C4: 0x03E00008 '....' - jr         $ra
+<a name="0x000011C8"></a>	0x000011C8: 0x27BD0010 '...'' - addiu      $sp, $sp, 0x10
+
+; ======================================================
+; Subroutine sub_000011CC - Address 0x000011CC 
+<a name="sub_000011CC">sub_000011CC:</a>
+		; Refs: <a href="#0x00000380">0x00000380</a> <a href="#0x0000038C">0x0000038C</a> <a href="#0x000003C0">0x000003C0</a> <a href="#0x000003DC">0x000003DC</a> <a href="#0x000003F8">0x000003F8</a> <a href="#0x00000440">0x00000440</a> <a href="#0x00000468">0x00000468</a> <a href="#0x0000047C">0x0000047C</a> <a href="#0x000004A4">0x000004A4</a> <a href="#0x000004B4">0x000004B4</a> <a href="#0x000004F4">0x000004F4</a> <a href="#0x00000538">0x00000538</a> <a href="#0x000005A0">0x000005A0</a> <a href="#0x00000624">0x00000624</a> <a href="#0x00000674">0x00000674</a> <a href="#0x00000690">0x00000690</a> <a href="#0x000006C8">0x000006C8</a> <a href="#0x00000700">0x00000700</a> <a href="#0x00000738">0x00000738</a> <a href="#0x00000770">0x00000770</a> <a href="#0x000007A8">0x000007A8</a> <a href="#0x000007E0">0x000007E0</a> <a href="#0x0000082C">0x0000082C</a> <a href="#0x0000085C">0x0000085C</a> <a href="#0x000008A4">0x000008A4</a> <a href="#0x000008D4">0x000008D4</a> <a href="#0x0000091C">0x0000091C</a> <a href="#0x0000094C">0x0000094C</a> <a href="#0x0000098C">0x0000098C</a> <a href="#0x000009B8">0x000009B8</a> <a href="#0x00000A20">0x00000A20</a> <a href="#0x00000A48">0x00000A48</a> <a href="#0x00000A98">0x00000A98</a> <a href="#0x00000AC8">0x00000AC8</a> <a href="#0x00000B10">0x00000B10</a> <a href="#0x00000B40">0x00000B40</a> <a href="#0x00000B7C">0x00000B7C</a> <a href="#0x00000B94">0x00000B94</a> <a href="#0x00000BE0">0x00000BE0</a> <a href="#0x00000C30">0x00000C30</a> <a href="#0x00000C88">0x00000C88</a> <a href="#0x00000CB0">0x00000CB0</a> <a href="#0x00000D08">0x00000D08</a> <a href="#0x00000D44">0x00000D44</a> <a href="#0x00000D54">0x00000D54</a> <a href="#0x00000D84">0x00000D84</a> <a href="#0x00000D9C">0x00000D9C</a> <a href="#0x00000DF4">0x00000DF4</a> <a href="#0x00000E1C">0x00000E1C</a> <a href="#0x00000EA4">0x00000EA4</a> <a href="#0x00000F28">0x00000F28</a> <a href="#0x00000F48">0x00000F48</a> <a href="#0x00000FB8">0x00000FB8</a> 
+<a name="0x000011CC"></a>	0x000011CC: 0x03601021 '!.`.' - move       $v0, $k1
+<a name="0x000011D0"></a>	0x000011D0: 0x03E00008 '....' - jr         $ra
+<a name="0x000011D4"></a>	0x000011D4: 0x0080D821 '!...' - move       $k1, $a0
+<a name="0x000011D8"></a>	0x000011D8: 0x03E00008 '....' - jr         $ra
+<a name="0x000011DC"></a>	0x000011DC: 0x03601021 '!.`.' - move       $v0, $k1
+
+; ==== Section .sceStub.text - Address 0x000011E0 Size 0x00000138 Flags 0x0006
+
+; ======================================================
+; Subroutine LflashFdisk_7A34548C - Address 0x000011E0 
+; Imported from LflashFdisk
+<a name="LflashFdisk_7A34548C">LflashFdisk_7A34548C:</a>
+		; Refs: <a href="#0x00001364">0x00001364</a> <a href="#0x00000AB4">0x00000AB4</a> 
+<a name="0x000011E0"></a>	0x000011E0: 0x03E00008 '....' - jr         $ra
+<a name="0x000011E4"></a>	0x000011E4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSysreg_driver_4F46EEDE - Address 0x000011E8 
+; Imported from sceSysreg_driver
+<a name="sceSysreg_driver_4F46EEDE">sceSysreg_driver_4F46EEDE:</a>
+		; Refs: <a href="#0x00001378">0x00001378</a> <a href="#0x0000019C">0x0000019C</a> 
+<a name="0x000011E8"></a>	0x000011E8: 0x03E00008 '....' - jr         $ra
+<a name="0x000011EC"></a>	0x000011EC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSysreg_driver_8F4F4E96 - Address 0x000011F0 
+; Imported from sceSysreg_driver
+<a name="sceSysreg_driver_8F4F4E96">sceSysreg_driver_8F4F4E96:</a>
+		; Refs: <a href="#0x000001AC">0x000001AC</a> 
+<a name="0x000011F0"></a>	0x000011F0: 0x03E00008 '....' - jr         $ra
+<a name="0x000011F4"></a>	0x000011F4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSysreg_driver_E2A5D1EE - Address 0x000011F8 
+; Imported from sceSysreg_driver
+<a name="sceSysreg_driver_E2A5D1EE">sceSysreg_driver_E2A5D1EE:</a>
+		; Refs: <a href="#0x0000007C">0x0000007C</a> 
+<a name="0x000011F8"></a>	0x000011F8: 0x03E00008 '....' - jr         $ra
+<a name="0x000011FC"></a>	0x000011FC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSyscon_driver_08234E6D - Address 0x00001200 
+; Imported from sceSyscon_driver
+<a name="sceSyscon_driver_08234E6D">sceSyscon_driver_08234E6D:</a>
+		; Refs: <a href="#0x0000138C">0x0000138C</a> <a href="#0x00000684">0x00000684</a> 
+<a name="0x00001200"></a>	0x00001200: 0x03E00008 '....' - jr         $ra
+<a name="0x00001204"></a>	0x00001204: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSyscon_driver_7EC5A957 - Address 0x00001208 
+; Imported from sceSyscon_driver
+<a name="sceSyscon_driver_7EC5A957">sceSyscon_driver_7EC5A957:</a>
+		; Refs: <a href="#0x00000088">0x00000088</a> 
+<a name="0x00001208"></a>	0x00001208: 0x03E00008 '....' - jr         $ra
+<a name="0x0000120C"></a>	0x0000120C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSyscon_driver_E7E87741 - Address 0x00001210 
+; Imported from sceSyscon_driver
+<a name="sceSyscon_driver_E7E87741">sceSyscon_driver_E7E87741:</a>
+		; Refs: <a href="#0x000000A0">0x000000A0</a> 
+<a name="0x00001210"></a>	0x00001210: 0x03E00008 '....' - jr         $ra
+<a name="0x00001214"></a>	0x00001214: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_01F09203 - Address 0x00001218 
+; Imported from sceNand_driver
+<a name="sceNand_driver_01F09203">sceNand_driver_01F09203:</a>
+		; Refs: <a href="#0x000013A0">0x000013A0</a> <a href="#0x00000CA0">0x00000CA0</a> 
+<a name="0x00001218"></a>	0x00001218: 0x03E00008 '....' - jr         $ra
+<a name="0x0000121C"></a>	0x0000121C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_0ADC8686 - Address 0x00001220 
+; Imported from sceNand_driver
+<a name="sceNand_driver_0ADC8686">sceNand_driver_0ADC8686:</a>
+		; Refs: <a href="#0x00000C04">0x00000C04</a> 
+<a name="0x00001220"></a>	0x00001220: 0x03E00008 '....' - jr         $ra
+<a name="0x00001224"></a>	0x00001224: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_41FFA822 - Address 0x00001228 
+; Imported from sceNand_driver
+<a name="sceNand_driver_41FFA822">sceNand_driver_41FFA822:</a>
+		; Refs: <a href="#0x00000D4C">0x00000D4C</a> 
+<a name="0x00001228"></a>	0x00001228: 0x03E00008 '....' - jr         $ra
+<a name="0x0000122C"></a>	0x0000122C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_5182C394 - Address 0x00001230 
+; Imported from sceNand_driver
+<a name="sceNand_driver_5182C394">sceNand_driver_5182C394:</a>
+		; Refs: <a href="#0x00000CDC">0x00000CDC</a> 
+<a name="0x00001230"></a>	0x00001230: 0x03E00008 '....' - jr         $ra
+<a name="0x00001234"></a>	0x00001234: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_AE4438C7 - Address 0x00001238 
+; Imported from sceNand_driver
+<a name="sceNand_driver_AE4438C7">sceNand_driver_AE4438C7:</a>
+		; Refs: <a href="#0x00000D90">0x00000D90</a> 
+<a name="0x00001238"></a>	0x00001238: 0x03E00008 '....' - jr         $ra
+<a name="0x0000123C"></a>	0x0000123C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_B07C41D4 - Address 0x00001240 
+; Imported from sceNand_driver
+<a name="sceNand_driver_B07C41D4">sceNand_driver_B07C41D4:</a>
+		; Refs: <a href="#0x000001C8">0x000001C8</a> <a href="#0x00000518">0x00000518</a> <a href="#0x00000BE8">0x00000BE8</a> <a href="#0x00000C90">0x00000C90</a> 
+<a name="0x00001240"></a>	0x00001240: 0x03E00008 '....' - jr         $ra
+<a name="0x00001244"></a>	0x00001244: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_C1376222 - Address 0x00001248 
+; Imported from sceNand_driver
+<a name="sceNand_driver_C1376222">sceNand_driver_C1376222:</a>
+		; Refs: <a href="#0x000001B8">0x000001B8</a> <a href="#0x0000052C">0x0000052C</a> 
+<a name="0x00001248"></a>	0x00001248: 0x03E00008 '....' - jr         $ra
+<a name="0x0000124C"></a>	0x0000124C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_C478C1DE - Address 0x00001250 
+; Imported from sceNand_driver
+<a name="sceNand_driver_C478C1DE">sceNand_driver_C478C1DE:</a>
+		; Refs: <a href="#0x00000CCC">0x00000CCC</a> 
+<a name="0x00001250"></a>	0x00001250: 0x03E00008 '....' - jr         $ra
+<a name="0x00001254"></a>	0x00001254: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_CE9843E6 - Address 0x00001258 
+; Imported from sceNand_driver
+<a name="sceNand_driver_CE9843E6">sceNand_driver_CE9843E6:</a>
+		; Refs: <a href="#0x000001D0">0x000001D0</a> <a href="#0x00000504">0x00000504</a> 
+<a name="0x00001258"></a>	0x00001258: 0x03E00008 '....' - jr         $ra
+<a name="0x0000125C"></a>	0x0000125C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceNand_driver_EB0A0022 - Address 0x00001260 
+; Imported from sceNand_driver
+<a name="sceNand_driver_EB0A0022">sceNand_driver_EB0A0022:</a>
+		; Refs: <a href="#0x00000B88">0x00000B88</a> 
+<a name="0x00001260"></a>	0x00001260: 0x03E00008 '....' - jr         $ra
+<a name="0x00001264"></a>	0x00001264: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SystemCtrlForKernel_EB74FE45 - Address 0x00001268 
+; Imported from SystemCtrlForKernel
+<a name="SystemCtrlForKernel_EB74FE45">SystemCtrlForKernel_EB74FE45:</a>
+		; Refs: <a href="#0x000013B4">0x000013B4</a> <a href="#0x000006D4">0x000006D4</a> <a href="#0x000006F8">0x000006F8</a> <a href="#0x00000744">0x00000744</a> <a href="#0x00000768">0x00000768</a> <a href="#0x000007B4">0x000007B4</a> <a href="#0x000007D8">0x000007D8</a> <a href="#0x00000838">0x00000838</a> <a href="#0x00000854">0x00000854</a> <a href="#0x000008B0">0x000008B0</a> <a href="#0x000008CC">0x000008CC</a> <a href="#0x00000928">0x00000928</a> <a href="#0x00000944">0x00000944</a> <a href="#0x00000998">0x00000998</a> <a href="#0x000009B0">0x000009B0</a> <a href="#0x00000AA4">0x00000AA4</a> <a href="#0x00000AC0">0x00000AC0</a> <a href="#0x00000B1C">0x00000B1C</a> <a href="#0x00000B38">0x00000B38</a> 
+<a name="0x00001268"></a>	0x00001268: 0x03E00008 '....' - jr         $ra
+<a name="0x0000126C"></a>	0x0000126C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SystemCtrlForKernel_159AF5CC - Address 0x00001270 
+; Imported from SystemCtrlForKernel
+<a name="SystemCtrlForKernel_159AF5CC">SystemCtrlForKernel_159AF5CC:</a>
+		; Refs: <a href="#0x00000318">0x00000318</a> <a href="#0x0000033C">0x0000033C</a> <a href="#0x00001004">0x00001004</a> 
+<a name="0x00001270"></a>	0x00001270: 0x03E00008 '....' - jr         $ra
+<a name="0x00001274"></a>	0x00001274: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SystemCtrlForKernel_1C90BECB - Address 0x00001278 
+; Imported from SystemCtrlForKernel
+<a name="SystemCtrlForKernel_1C90BECB">SystemCtrlForKernel_1C90BECB:</a>
+		; Refs: <a href="#0x00000200">0x00000200</a> 
+<a name="0x00001278"></a>	0x00001278: 0x03E00008 '....' - jr         $ra
+<a name="0x0000127C"></a>	0x0000127C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine LflashFatfmt_B7A424A4 - Address 0x00001280 
+; Imported from LflashFatfmt
+<a name="LflashFatfmt_B7A424A4">LflashFatfmt_B7A424A4:</a>
+		; Refs: <a href="#0x000013C8">0x000013C8</a> <a href="#0x00000B2C">0x00000B2C</a> 
+<a name="0x00001280"></a>	0x00001280: 0x03E00008 '....' - jr         $ra
+<a name="0x00001284"></a>	0x00001284: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine semaphore_4C537C72 - Address 0x00001288 
+; Imported from semaphore
+<a name="semaphore_4C537C72">semaphore_4C537C72:</a>
+		; Refs: <a href="#0x000013DC">0x000013DC</a> <a href="#0x00000A3C">0x00000A3C</a> 
+<a name="0x00001288"></a>	0x00001288: 0x03E00008 '....' - jr         $ra
+<a name="0x0000128C"></a>	0x0000128C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine LoadCoreForKernel_D8779AC6 - Address 0x00001290 
+; Imported from LoadCoreForKernel
+<a name="LoadCoreForKernel_D8779AC6">LoadCoreForKernel_D8779AC6:</a>
+		; Refs: <a href="#0x000013F0">0x000013F0</a> <a href="#0x00000E9C">0x00000E9C</a> <a href="#0x00000EF4">0x00000EF4</a> <a href="#0x00000FB0">0x00000FB0</a> 
+<a name="0x00001290"></a>	0x00001290: 0x03E00008 '....' - jr         $ra
+<a name="0x00001294"></a>	0x00001294: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine LoadCoreForKernel_CF8A41B1 - Address 0x00001298 
+; Imported from LoadCoreForKernel
+<a name="LoadCoreForKernel_CF8A41B1">LoadCoreForKernel_CF8A41B1:</a>
+		; Refs: <a href="#0x00000E0C">0x00000E0C</a> <a href="#0x00000F34">0x00000F34</a> 
+<a name="0x00001298"></a>	0x00001298: 0x03E00008 '....' - jr         $ra
+<a name="0x0000129C"></a>	0x0000129C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine UtilsForKernel_79D1C3FA - Address 0x000012A0 
+; Imported from UtilsForKernel
+<a name="UtilsForKernel_79D1C3FA">UtilsForKernel_79D1C3FA:</a>
+		; Refs: <a href="#0x00001404">0x00001404</a> <a href="#0x00000E94">0x00000E94</a> <a href="#0x00000EE8">0x00000EE8</a> <a href="#0x00000FA8">0x00000FA8</a> 
+<a name="0x000012A0"></a>	0x000012A0: 0x03E00008 '....' - jr         $ra
+<a name="0x000012A4"></a>	0x000012A4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine ThreadManForKernel_C11BA8C4 - Address 0x000012A8 
+; Imported from ThreadManForKernel
+<a name="ThreadManForKernel_C11BA8C4">ThreadManForKernel_C11BA8C4:</a>
+		; Refs: <a href="#0x00001418">0x00001418</a> <a href="#0x000002D8">0x000002D8</a> 
+<a name="0x000012A8"></a>	0x000012A8: 0x03E00008 '....' - jr         $ra
+<a name="0x000012AC"></a>	0x000012AC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine ThreadManForKernel_BC31C1B9 - Address 0x000012B0 
+; Imported from ThreadManForKernel
+<a name="ThreadManForKernel_BC31C1B9">ThreadManForKernel_BC31C1B9:</a>
+		; Refs: <a href="#0x000006EC">0x000006EC</a> <a href="#0x0000075C">0x0000075C</a> <a href="#0x000007CC">0x000007CC</a> 
+<a name="0x000012B0"></a>	0x000012B0: 0x03E00008 '....' - jr         $ra
+<a name="0x000012B4"></a>	0x000012B4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SysclibForKernel_C0AB8932 - Address 0x000012B8 
+; Imported from SysclibForKernel
+<a name="SysclibForKernel_C0AB8932">SysclibForKernel_C0AB8932:</a>
+		; Refs: <a href="#0x0000142C">0x0000142C</a> <a href="#0x00001068">0x00001068</a> <a href="#0x00001080">0x00001080</a> <a href="#0x000010DC">0x000010DC</a> <a href="#0x00001130">0x00001130</a> 
+<a name="0x000012B8"></a>	0x000012B8: 0x03E00008 '....' - jr         $ra
+<a name="0x000012BC"></a>	0x000012BC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SysclibForKernel_52DF196C - Address 0x000012C0 
+; Imported from SysclibForKernel
+<a name="SysclibForKernel_52DF196C">SysclibForKernel_52DF196C:</a>
+		; Refs: <a href="#0x00000E00">0x00000E00</a> 
+<a name="0x000012C0"></a>	0x000012C0: 0x03E00008 '....' - jr         $ra
+<a name="0x000012C4"></a>	0x000012C4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SysclibForKernel_AB7592FF - Address 0x000012C8 
+; Imported from SysclibForKernel
+<a name="SysclibForKernel_AB7592FF">SysclibForKernel_AB7592FF:</a>
+		; Refs: <a href="#0x00000E70">0x00000E70</a> 
+<a name="0x000012C8"></a>	0x000012C8: 0x03E00008 '....' - jr         $ra
+<a name="0x000012CC"></a>	0x000012CC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine SysclibForKernel_81D0D1F7 - Address 0x000012D0 
+; Imported from SysclibForKernel
+<a name="SysclibForKernel_81D0D1F7">SysclibForKernel_81D0D1F7:</a>
+		; Refs: <a href="#0x00000E54">0x00000E54</a> 
+<a name="0x000012D0"></a>	0x000012D0: 0x03E00008 '....' - jr         $ra
+<a name="0x000012D4"></a>	0x000012D4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_958089DB - Address 0x000012D8 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_958089DB">sceIdStorage_driver_958089DB:</a>
+		; Refs: <a href="#0x00001440">0x00001440</a> <a href="#0x000009DC">0x000009DC</a> 
+<a name="0x000012D8"></a>	0x000012D8: 0x03E00008 '....' - jr         $ra
+<a name="0x000012DC"></a>	0x000012DC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_F4BCB3EE - Address 0x000012E0 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_F4BCB3EE">sceIdStorage_driver_F4BCB3EE:</a>
+		; Refs: <a href="#0x000009E4">0x000009E4</a> 
+<a name="0x000012E0"></a>	0x000012E0: 0x03E00008 '....' - jr         $ra
+<a name="0x000012E4"></a>	0x000012E4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_EB00C509 - Address 0x000012E8 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_EB00C509">sceIdStorage_driver_EB00C509:</a>
+		; Refs: <a href="#0x000008C0">0x000008C0</a> 
+<a name="0x000012E8"></a>	0x000012E8: 0x03E00008 '....' - jr         $ra
+<a name="0x000012EC"></a>	0x000012EC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_1FA4D135 - Address 0x000012F0 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_1FA4D135">sceIdStorage_driver_1FA4D135:</a>
+		; Refs: <a href="#0x00000848">0x00000848</a> 
+<a name="0x000012F0"></a>	0x000012F0: 0x03E00008 '....' - jr         $ra
+<a name="0x000012F4"></a>	0x000012F4: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_08A471A6 - Address 0x000012F8 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_08A471A6">sceIdStorage_driver_08A471A6:</a>
+		; Refs: <a href="#0x000009A4">0x000009A4</a> 
+<a name="0x000012F8"></a>	0x000012F8: 0x03E00008 '....' - jr         $ra
+<a name="0x000012FC"></a>	0x000012FC: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_99ACCB71 - Address 0x00001300 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_99ACCB71">sceIdStorage_driver_99ACCB71:</a>
+		; Refs: <a href="#0x00000938">0x00000938</a> 
+<a name="0x00001300"></a>	0x00001300: 0x03E00008 '....' - jr         $ra
+<a name="0x00001304"></a>	0x00001304: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceIdStorage_driver_3AD32523 - Address 0x00001308 
+; Imported from sceIdStorage_driver
+<a name="sceIdStorage_driver_3AD32523">sceIdStorage_driver_3AD32523:</a>
+		; Refs: <a href="#0x00000804">0x00000804</a> 
+<a name="0x00001308"></a>	0x00001308: 0x03E00008 '....' - jr         $ra
+<a name="0x0000130C"></a>	0x0000130C: 0x00000000 '....' - nop        
+
+; ======================================================
+; Subroutine sceSysEventForKernel_CD9E4BB5 - Address 0x00001310 
+; Imported from sceSysEventForKernel
+<a name="sceSysEventForKernel_CD9E4BB5">sceSysEventForKernel_CD9E4BB5:</a>
+		; Refs: <a href="#0x00001454">0x00001454</a> <a href="#0x000001F4">0x000001F4</a> 
+<a name="0x00001310"></a>	0x00001310: 0x03E00008 '....' - jr         $ra
+<a name="0x00001314"></a>	0x00001314: 0x00000000 '....' - nop        
+
+; ==== Section .lib.ent.top - Address 0x00001318 Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001310"></a>0x00001318 - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.ent - Address 0x0000131C Size 0x00000030 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001310"></a>0x0000131C - 00 00 00 00 | 00 00 00 80 | 04 01 01 00 | B0 14 00 00 - ................
+<a name="0x00001320"></a>0x0000132C - 60 18 00 00 | 00 00 01 40 | 04 00 1B 00 | C0 14 00 00 - `......@........
+<a name="0x00001330"></a>0x0000133C - 6C 18 00 00 | 00 00 01 00 | 04 00 10 00 | 98 15 00 00 - l...............
+
+; ==== Section .lib.ent.btm - Address 0x0000134C Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001340"></a>0x0000134C - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.stub.top - Address 0x00001350 Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001350"></a>0x00001350 - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.stub - Address 0x00001354 Size 0x00000104 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001350"></a>0x00001354 - A4 14 00 00 | 00 00 09 00 | 05 00 01 00 | 28 17 00 00 - ............(...
+<a name="0x00001360"></a>0x00001364 - E0 11 00 00 | 1C 16 00 00 | 11 00 01 00 | 05 00 03 00 - ................
+<a name="0x00001370"></a>0x00001374 - 2C 17 00 00 | E8 11 00 00 | 34 16 00 00 | 11 00 01 00 - ,.......4.......
+<a name="0x00001380"></a>0x00001384 - 05 00 03 00 | 38 17 00 00 | 00 12 00 00 | 4C 16 00 00 - ....8.......L...
+<a name="0x00001390"></a>0x00001394 - 11 00 01 00 | 05 00 0A 00 | 44 17 00 00 | 18 12 00 00 - ........D.......
+<a name="0x000013A0"></a>0x000013A4 - 60 16 00 00 | 00 00 09 00 | 05 00 03 00 | 6C 17 00 00 - `...........l...
+<a name="0x000013B0"></a>0x000013B4 - 68 12 00 00 | 78 16 00 00 | 00 00 09 00 | 05 00 01 00 - h...x...........
+<a name="0x000013C0"></a>0x000013C4 - 78 17 00 00 | 80 12 00 00 | 8C 16 00 00 | 11 00 01 00 - x...............
+<a name="0x000013D0"></a>0x000013D4 - 05 00 01 00 | 7C 17 00 00 | 88 12 00 00 | 9C 16 00 00 - ....|...........
+<a name="0x000013E0"></a>0x000013E4 - 00 00 01 00 | 05 00 02 00 | 80 17 00 00 | 90 12 00 00 - ................
+<a name="0x000013F0"></a>0x000013F4 - B4 16 00 00 | 00 00 09 00 | 05 00 01 00 | 88 17 00 00 - ................
+<a name="0x00001400"></a>0x00001404 - A0 12 00 00 | C8 16 00 00 | 00 00 01 00 | 05 00 02 00 - ................
+<a name="0x00001410"></a>0x00001414 - 8C 17 00 00 | A8 12 00 00 | E0 16 00 00 | 00 00 01 00 - ................
+<a name="0x00001420"></a>0x00001424 - 05 00 04 00 | 94 17 00 00 | B8 12 00 00 | F8 16 00 00 - ................
+<a name="0x00001430"></a>0x00001434 - 00 00 01 00 | 05 00 07 00 | A4 17 00 00 | D8 12 00 00 - ................
+<a name="0x00001440"></a>0x00001444 - 10 17 00 00 | 00 00 01 00 | 05 00 01 00 | C0 17 00 00 - ................
+<a name="0x00001450"></a>0x00001454 - 10 13 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .lib.stub.btm - Address 0x00001458 Size 0x00000004 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001450"></a>0x00001458 - 00 00 00 00 | -- -- -- -- | -- -- -- -- | -- -- -- -- - ................
+
+; ==== Section .rodata.sceModuleInfo - Address 0x00001460 Size 0x00000040 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001460"></a>0x00001460 - 07 10 00 01 | 44 65 73 43 | 65 6D 4D 61 | 6E 61 67 65 - ....DesCemManage
+<a name="0x00001470"></a>0x00001470 - 72 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 - r...............
+<a name="0x00001480"></a>0x00001480 - 00 9B 00 00 | 1C 13 00 00 | 4C 13 00 00 | 54 13 00 00 - ........L...T...
+<a name="0x00001490"></a>0x00001490 - 58 14 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 - X...............
+
+; Strings
+0x00001464: "DesCemManager"
+
+; ==== Section .rodata.sceResident - Address 0x000014A0 Size 0x00000288 Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000014A0"></a>0x000014A0 - 00 00 00 00 | 4C 66 6C 61 | 73 68 46 64 | 69 73 6B 00 - ....LflashFdisk.
+<a name="0x000014B0"></a>0x000014B0 - DB AC 32 D6 | A7 73 1D F0 | 44 00 00 00 | 60 14 00 00 - ..2..s..D...`...
+<a name="0x000014C0"></a>0x000014C0 - CE 90 21 A2 | 55 A3 3E 3A | 53 BA 98 D2 | C7 A1 87 9C - ..!.U.>:S.......
+<a name="0x000014D0"></a>0x000014D0 - 20 11 16 F5 | 83 1E D9 39 | 13 D7 99 A8 | FD FC 1F 74 -  ......9.......t
+<a name="0x000014E0"></a>0x000014E0 - E5 4D 3F EA | 2F CC 5F 4A | 4A 61 B5 7E | B4 82 4C 50 - .M?./._JJa.~..LP
+<a name="0x000014F0"></a>0x000014F0 - B0 28 91 7E | E5 09 35 AD | 13 85 71 1A | 84 EA DD 48 - .(.~..5...q....H
+<a name="0x00001500"></a>0x00001500 - 8E 72 7A 76 | A0 A2 8E FE | 13 C9 AA FF | 3D 52 F8 E5 - .rzv........=R..
+<a name="0x00001510"></a>0x00001510 - A6 23 73 12 | DF 29 93 54 | FC F7 F3 34 | 8A 14 C4 A6 - .#s..).T...4....
+<a name="0x00001520"></a>0x00001520 - C1 B9 34 35 | FC 36 9A 10 | D1 B8 14 49 | 60 05 00 00 - ..45.6.....I`...
+<a name="0x00001530"></a>0x00001530 - FC 0E 00 00 | BC 0D 00 00 | 00 00 00 00 | 0C 00 00 00 - ................
+<a name="0x00001540"></a>0x00001540 - F0 0A 00 00 | 78 0A 00 00 | D0 04 00 00 | 70 0D 00 00 - ....x.......p...
+<a name="0x00001550"></a>0x00001550 - 38 0D 00 00 | 60 0C 00 00 | B4 0B 00 00 | 68 0B 00 00 - 8...`.......h...
+<a name="0x00001560"></a>0x00001560 - 94 04 00 00 | 60 04 00 00 | E4 03 00 00 | 94 07 00 00 - ....`...........
+<a name="0x00001570"></a>0x00001570 - 24 07 00 00 | 74 09 00 00 | FC 08 00 00 | 84 08 00 00 - $...t...........
+<a name="0x00001580"></a>0x00001580 - 0C 08 00 00 | B4 06 00 00 | 58 06 00 00 | EC 09 00 00 - ........X.......
+<a name="0x00001590"></a>0x00001590 - A8 03 00 00 | 70 03 00 00 | CE 90 21 A2 | 55 A3 3E 3A - ....p.....!.U.>:
+<a name="0x000015A0"></a>0x000015A0 - 53 BA 98 D2 | C7 A1 87 9C | 20 11 16 F5 | 83 1E D9 39 - S....... ......9
+<a name="0x000015B0"></a>0x000015B0 - 13 D7 99 A8 | FD FC 1F 74 | E5 4D 3F EA | 2F CC 5F 4A - .......t.M?./._J
+<a name="0x000015C0"></a>0x000015C0 - 4A 61 B5 7E | B4 82 4C 50 | B0 28 91 7E | E5 09 35 AD - Ja.~..LP.(.~..5.
+<a name="0x000015D0"></a>0x000015D0 - 13 85 71 1A | 84 EA DD 48 | 60 05 00 00 | FC 0E 00 00 - ..q....H`.......
+<a name="0x000015E0"></a>0x000015E0 - BC 0D 00 00 | 00 00 00 00 | 0C 00 00 00 | F0 0A 00 00 - ................
+<a name="0x000015F0"></a>0x000015F0 - 78 0A 00 00 | D0 04 00 00 | 70 0D 00 00 | 38 0D 00 00 - x.......p...8...
+<a name="0x00001600"></a>0x00001600 - 60 0C 00 00 | B4 0B 00 00 | 68 0B 00 00 | 94 04 00 00 - `.......h.......
+<a name="0x00001610"></a>0x00001610 - 60 04 00 00 | E4 03 00 00 | 00 00 00 00 | 73 63 65 53 - `...........sceS
+<a name="0x00001620"></a>0x00001620 - 79 73 72 65 | 67 5F 64 72 | 69 76 65 72 | 00 00 00 00 - ysreg_driver....
+<a name="0x00001630"></a>0x00001630 - 00 00 00 00 | 73 63 65 53 | 79 73 63 6F | 6E 5F 64 72 - ....sceSyscon_dr
+<a name="0x00001640"></a>0x00001640 - 69 76 65 72 | 00 00 00 00 | 00 00 00 00 | 73 63 65 4E - iver........sceN
+<a name="0x00001650"></a>0x00001650 - 61 6E 64 5F | 64 72 69 76 | 65 72 00 00 | 00 00 00 00 - and_driver......
+<a name="0x00001660"></a>0x00001660 - 53 79 73 74 | 65 6D 43 74 | 72 6C 46 6F | 72 4B 65 72 - SystemCtrlForKer
+<a name="0x00001670"></a>0x00001670 - 6E 65 6C 00 | 00 00 00 00 | 4C 66 6C 61 | 73 68 46 61 - nel.....LflashFa
+<a name="0x00001680"></a>0x00001680 - 74 66 6D 74 | 00 00 00 00 | 00 00 00 00 | 73 65 6D 61 - tfmt........sema
+<a name="0x00001690"></a>0x00001690 - 70 68 6F 72 | 65 00 00 00 | 00 00 00 00 | 4C 6F 61 64 - phore.......Load
+<a name="0x000016A0"></a>0x000016A0 - 43 6F 72 65 | 46 6F 72 4B | 65 72 6E 65 | 6C 00 00 00 - CoreForKernel...
+<a name="0x000016B0"></a>0x000016B0 - 00 00 00 00 | 55 74 69 6C | 73 46 6F 72 | 4B 65 72 6E - ....UtilsForKern
+<a name="0x000016C0"></a>0x000016C0 - 65 6C 00 00 | 00 00 00 00 | 54 68 72 65 | 61 64 4D 61 - el......ThreadMa
+<a name="0x000016D0"></a>0x000016D0 - 6E 46 6F 72 | 4B 65 72 6E | 65 6C 00 00 | 00 00 00 00 - nForKernel......
+<a name="0x000016E0"></a>0x000016E0 - 53 79 73 63 | 6C 69 62 46 | 6F 72 4B 65 | 72 6E 65 6C - SysclibForKernel
+<a name="0x000016F0"></a>0x000016F0 - 00 00 00 00 | 00 00 00 00 | 73 63 65 49 | 64 53 74 6F - ........sceIdSto
+<a name="0x00001700"></a>0x00001700 - 72 61 67 65 | 5F 64 72 69 | 76 65 72 00 | 00 00 00 00 - rage_driver.....
+<a name="0x00001710"></a>0x00001710 - 73 63 65 53 | 79 73 45 76 | 65 6E 74 46 | 6F 72 4B 65 - sceSysEventForKe
+<a name="0x00001720"></a>0x00001720 - 72 6E 65 6C | 00 00 00 00 | -- -- -- -- | -- -- -- -- - rnel............
+
+; Strings
+0x000014A4: "LflashFdisk"
+0x0000161C: "sceSysreg_driver"
+0x00001634: "sceSyscon_driver"
+0x0000164C: "sceNand_driver"
+0x00001660: "SystemCtrlForKernel"
+0x00001678: "LflashFatfmt"
+0x0000168C: "semaphore"
+0x0000169C: "LoadCoreForKernel"
+0x000016B4: "UtilsForKernel"
+0x000016C8: "ThreadManForKernel"
+0x000016E0: "SysclibForKernel"
+0x000016F8: "sceIdStorage_driver"
+0x00001710: "sceSysEventForKernel"
+
+; ==== Section .rodata.sceNid - Address 0x00001728 Size 0x0000009C Flags 0x0002
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001720"></a>0x00001728 - 8C 54 34 7A | DE EE 46 4F | 96 4E 4F 8F | EE D1 A5 E2 - .T4z..FO.NO.....
+<a name="0x00001730"></a>0x00001738 - 6D 4E 23 08 | 57 A9 C5 7E | 41 77 E8 E7 | 03 92 F0 01 - mN#.W..~Aw......
+<a name="0x00001740"></a>0x00001748 - 86 86 DC 0A | 22 A8 FF 41 | 94 C3 82 51 | C7 38 44 AE - ...."..A...Q.8D.
+<a name="0x00001750"></a>0x00001758 - D4 41 7C B0 | 22 62 37 C1 | DE C1 78 C4 | E6 43 98 CE - .A|."b7...x..C..
+<a name="0x00001760"></a>0x00001768 - 22 00 0A EB | 45 FE 74 EB | CC F5 9A 15 | CB BE 90 1C - "...E.t.........
+<a name="0x00001770"></a>0x00001778 - A4 24 A4 B7 | 72 7C 53 4C | C6 9A 77 D8 | B1 41 8A CF - .$..r|SL..w..A..
+<a name="0x00001780"></a>0x00001788 - FA C3 D1 79 | C4 A8 1B C1 | B9 C1 31 BC | 32 89 AB C0 - ...y......1.2...
+<a name="0x00001790"></a>0x00001798 - 6C 19 DF 52 | FF 92 75 AB | F7 D1 D0 81 | DB 89 80 95 - l..R..u.........
+<a name="0x000017A0"></a>0x000017A8 - EE B3 BC F4 | 09 C5 00 EB | 35 D1 A4 1F | A6 71 A4 08 - ........5....q..
+<a name="0x000017B0"></a>0x000017B8 - 71 CB AC 99 | 23 25 D3 3A | B5 4B 9E CD | -- -- -- -- - q...#%.:.K......
+
+; ==== Section .rodata - Address 0x000017C4 Size 0x000000B9 Flags 0x0032
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x000017C0"></a>0x000017C4 - 73 63 65 4E | 41 4E 44 5F | 55 70 64 61 | 74 65 72 5F - sceNAND_Updater_
+<a name="0x000017D0"></a>0x000017D4 - 44 72 69 76 | 65 72 00 00 | 73 63 65 4E | 61 6E 64 5F - Driver..sceNand_
+<a name="0x000017E0"></a>0x000017E4 - 75 70 64 61 | 74 65 72 5F | 64 72 69 76 | 65 72 00 00 - updater_driver..
+<a name="0x000017F0"></a>0x000017F4 - 73 63 65 4C | 6F 77 49 4F | 5F 44 72 69 | 76 65 72 00 - sceLowIO_Driver.
+<a name="0x00001800"></a>0x00001804 - 73 63 65 4E | 61 6E 64 5F | 64 72 69 76 | 65 72 00 00 - sceNand_driver..
+<a name="0x00001810"></a>0x00001814 - 73 63 65 4C | 66 6C 61 73 | 68 46 61 74 | 66 6D 74 00 - sceLflashFatfmt.
+<a name="0x00001820"></a>0x00001824 - 73 63 65 4C | 46 61 74 46 | 73 5F 55 70 | 64 61 74 65 - sceLFatFs_Update
+<a name="0x00001830"></a>0x00001834 - 72 5F 44 72 | 69 76 65 72 | 00 00 00 00 | 73 63 65 57 - r_Driver....sceW
+<a name="0x00001840"></a>0x00001844 - 6C 61 6E 5F | 44 72 69 76 | 65 72 00 00 | 53 75 73 70 - lan_Driver..Susp
+<a name="0x00001850"></a>0x00001854 - 65 6E 64 43 | 61 6E 63 65 | 6C 65 72 00 | 44 63 4D 61 - endCanceler.DcMa
+<a name="0x00001860"></a>0x00001864 - 6E 61 67 65 | 72 00 00 00 | 44 63 4D 61 | 6E 61 67 65 - nager...DcManage
+<a name="0x00001870"></a>0x00001874 - 72 5F 64 72 | 69 76 65 72 | 00 -- -- -- | -- -- -- -- - r_driver........
+
+; Strings
+0x000017C4: "sceNAND_Updater_Driver"
+0x000017DC: "sceNand_updater_driver"
+0x000017F4: "sceLowIO_Driver"
+0x00001804: "sceNand_driver"
+0x00001814: "sceLflashFatfmt"
+0x00001824: "sceLFatFs_Updater_Driver"
+0x00001840: "sceWlan_Driver"
+0x00001850: "SuspendCanceler"
+0x00001860: "DcManager"
+0x0000186C: "DcManager_driver"
+
+; ==== Section .data - Address 0x00001980 Size 0x0000018C Flags 0x0003
+           - 00 01 02 03 | 04 05 06 07 | 08 09 0A 0B | 0C 0D 0E 0F - 0123456789ABCDEF
+-------------------------------------------------------------------------------------
+<a name="0x00001980"></a>0x00001980 - FF FF FF FF | 03 92 F0 01 | 86 86 DC 0A | 36 8F EE 0B - ............6...
+<a name="0x00001990"></a>0x00001990 - BD BB 9B 0F | 61 86 B7 18 | FE CF 74 26 | 1B 08 F6 2F - ....a.....t&.../
+<a name="0x000019A0"></a>0x000019A0 - 21 BC 76 3F | 22 A8 FF 41 | 94 C3 82 51 | 55 27 C0 5A - !.v?"..A...QU'.Z
+<a name="0x000019B0"></a>0x000019B0 - B2 D2 6C 71 | 08 84 A6 73 | EF 56 67 76 | 7A B7 F7 7A - ..lq...s.Vgvz..z
+<a name="0x000019C0"></a>0x000019C0 - 76 5D EE 84 | 72 9F CC 88 | 6A 16 32 89 | E0 B2 33 89 - v]..r...j.2...3.
+<a name="0x000019D0"></a>0x000019D0 - 08 CA BD 89 | 9F AB F0 8A | 33 C4 2A 9B | 12 BB 13 A5 - ........3.*.....
+<a name="0x000019E0"></a>0x000019E0 - C7 38 44 AE | D4 41 7C B0 | E5 21 B0 B2 | ED D2 95 B7 - .8D..A|..!......
+<a name="0x000019F0"></a>0x000019F0 - 46 5D DD BA | 22 62 37 C1 | 36 A1 9D C2 | 51 A0 2E C3 - F].."b7.6...Q...
+<a name="0x00001A00"></a>0x00001A00 - DE C1 78 C4 | E6 43 98 CE | 0E 87 05 D3 | 43 C3 97 D8 - ..x..C......C...
+<a name="0x00001A10"></a>0x00001A10 - 8D E8 5A E0 | DE 11 1A E4 | 22 00 0A EB | C6 E6 A0 EB - ..Z.....".......
+<a name="0x00001A20"></a>0x00001A20 - 93 F1 55 EF | 10 76 DF FC | C0 18 00 00 | 18 09 00 00 - ..U..v..........
+<a name="0x00001A30"></a>0x00001A30 - 70 0D 00 00 | FF FF FF FF | FF FF FF FF | FF FF FF FF - p...............
+<a name="0x00001A40"></a>0x00001A40 - FF FF FF FF | FF FF FF FF | E8 05 00 00 | E0 0B 00 00 - ................
+<a name="0x00001A50"></a>0x00001A50 - FC 16 00 00 | FF FF FF FF | FF FF FF FF | 34 07 00 00 - ............4...
+<a name="0x00001A60"></a>0x00001A60 - 54 06 00 00 | E8 04 00 00 | 4C 1E 00 00 | 08 0E 00 00 - T.......L.......
+<a name="0x00001A70"></a>0x00001A70 - 4C 18 00 00 | 80 0D 00 00 | C4 0D 00 00 | 58 1A 00 00 - L...........X...
+<a name="0x00001A80"></a>0x00001A80 - 5C 01 00 00 | 68 05 00 00 | 08 1C 00 00 | C4 15 00 00 - \...h...........
+<a name="0x00001A90"></a>0x00001A90 - 4C 1E 00 00 | FF FF FF FF | 14 1C 00 00 | 4C 19 00 00 - L...........L...
+<a name="0x00001AA0"></a>0x00001AA0 - 78 16 00 00 | 2C 0E 00 00 | FF FF FF FF | E8 0C 00 00 - x...,...........
+<a name="0x00001AB0"></a>0x00001AB0 - A0 14 00 00 | EC 0D 00 00 | 3C 0D 00 00 | DC 0A 00 00 - ........&lt;.......
+<a name="0x00001AC0"></a>0x00001AC0 - FF FF FF FF | 20 1C 00 00 | DC 06 00 00 | 40 00 00 00 - .... .......@...
+<a name="0x00001AD0"></a>0x00001AD0 - 50 18 00 00 | 00 FF FF 00 | 1C 00 00 00 | 00 00 00 00 - P...............
+<a name="0x00001AE0"></a>0x00001AE0 - 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 - ................
+<a name="0x00001AF0"></a>0x00001AF0 - 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | 00 00 00 00 - ................
+<a name="0x00001B00"></a>0x00001B00 - 00 00 00 00 | 00 00 00 00 | 00 00 00 00 | -- -- -- -- - ................
+</pre></body></html>
